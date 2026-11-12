@@ -1,6 +1,6 @@
 <div align="center">
   <!-- 00 Hero Banner -->
-  <img src="assets/hero.svg" alt="Harish Senthilraja — AI & Backend Software Engineer" width="100%" />
+  <img src="assets/hero.svg" alt="Harish — AI & Backend Software Engineer" width="100%" />
 </div>
 
 <br/>
@@ -13,23 +13,14 @@
 <br/>
 
 <div align="center">
-  <!-- 01 About Card -->
-  <img src="assets/card-about.svg" alt="About Harish Senthilraja" width="100%" />
+  <!-- 01 About Card (AI-Focused) -->
+  <img src="assets/card-about.svg" alt="About Harish" width="100%" />
 </div>
 
 <br/>
 
 <div align="center">
-  <!-- 02 Selected Work: PRISM -->
-  <a href="https://github.com/Harish-628/PRISM">
-    <img src="assets/project-prism.svg" alt="PRISM Project — Click to view repository" width="100%" />
-  </a>
-</div>
-
-<br/>
-
-<div align="center">
-  <!-- 02 Selected Work: Echo Sight -->
+  <!-- 02 Selected Work: Echo Sight (1st Project) -->
   <a href="https://github.com/Harish-628/Echo-Sight">
     <img src="assets/project-echosight.svg" alt="Echo Sight Project — Click to view repository" width="100%" />
   </a>
@@ -38,9 +29,18 @@
 <br/>
 
 <div align="center">
-  <!-- 02 Selected Work: NeuralKPI -->
+  <!-- 02 Selected Work: NeuralKPI / Campus OS (2nd Project) -->
   <a href="https://github.com/Harish-628/NeuralKPI">
-    <img src="assets/project-neuralkpi.svg" alt="NeuralKPI Project — Click to view repository" width="100%" />
+    <img src="assets/project-neuralkpi.svg" alt="NeuralKPI Campus OS Project — Click to view repository" width="100%" />
+  </a>
+</div>
+
+<br/>
+
+<div align="center">
+  <!-- 02 Selected Work: PRISM (3rd Project) -->
+  <a href="https://github.com/Harish-628/PRISM">
+    <img src="assets/project-prism.svg" alt="PRISM Project — Click to view repository" width="100%" />
   </a>
 </div>
 

@@ -35,19 +35,19 @@
       Third-year Artificial Intelligence and Data Science undergraduate at Kongunadu College of Engineering and Technology.
     </text>
     <text x="0" y="82" fill="#F8EAF0" font-size="13" font-weight="400" fill-opacity="0.9">
-      Focused on low-latency edge computing, real-time sensor telemetry, and autonomous multi-agent AI ecosystems.
+      Specialized in building autonomous multi-agent systems, deep learning architectures, multimodal AI, and intelligent workflows.
     </text>
 
-    <!-- 3 Core Pillars -->
+    <!-- 3 Core AI Pillars (AI-focused) -->
     <g transform="translate(0, 114)">
       <circle cx="4" cy="-4" r="3.5" fill="#FF2A6D" />
-      <text x="14" y="0" fill="#E5A3BC" font-size="12" font-weight="600">Edge AI &amp; Radar DSP</text>
+      <text x="14" y="0" fill="#E5A3BC" font-size="12" font-weight="600">Multi-Agent Swarms &amp; LangGraph</text>
 
-      <circle cx="210" cy="-4" r="3.5" fill="#E5A3BC" />
-      <text x="220" y="0" fill="#E5A3BC" font-size="12" font-weight="600">Multi-Agent AI Swarms</text>
+      <circle cx="270" cy="-4" r="3.5" fill="#E5A3BC" />
+      <text x="280" y="0" fill="#E5A3BC" font-size="12" font-weight="600">Multimodal Computer Vision (YOLOv8)</text>
 
-      <circle cx="430" cy="-4" r="3.5" fill="#FF2A6D" />
-      <text x="440" y="0" fill="#E5A3BC" font-size="12" font-weight="600">Terminal-First Linux Systems</text>
+      <circle cx="560" cy="-4" r="3.5" fill="#FF2A6D" />
+      <text x="570" y="0" fill="#E5A3BC" font-size="12" font-weight="600">LLM Hybrid Routing &amp; AI ERP</text>
     </g>
   </g>
 </svg>
