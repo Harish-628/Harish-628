@@ -1,51 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 90" width="100%" height="auto" style="border-radius: 14px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Ubuntu', sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 85" width="100%" height="auto" style="border-radius: 14px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Ubuntu', sans-serif;">
   <defs>
-    <linearGradient id="cnt_glass_fill" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#240B1A" stop-opacity="0.96" />
-      <stop offset="50%" stop-color="#12050E" stop-opacity="0.99" />
-      <stop offset="100%" stop-color="#1E0815" stop-opacity="0.96" />
+    <linearGradient id="ccnt_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#240718" stop-opacity="0.96" />
+      <stop offset="50%" stop-color="#0E020A" stop-opacity="0.99" />
+      <stop offset="100%" stop-color="#1C0513" stop-opacity="0.96" />
     </linearGradient>
 
-    <linearGradient id="cnt_glass_border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#E5B5C7" stop-opacity="0.8" />
-      <stop offset="30%" stop-color="#801D46" stop-opacity="0.6" />
-      <stop offset="70%" stop-color="#451126" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#C77B9B" stop-opacity="0.6" />
+    <linearGradient id="ccnt_border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF70A6" stop-opacity="0.9" />
+      <stop offset="30%" stop-color="#FF1A66" stop-opacity="0.7" />
+      <stop offset="70%" stop-color="#660A2B" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#FFA8C5" stop-opacity="0.8" />
     </linearGradient>
 
-    <linearGradient id="cnt_sheen" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.14" />
+    <linearGradient id="ccnt_sheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.16" />
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
     </linearGradient>
 
-    <filter id="cnt_shadow" x="-5%" y="-5%" width="110%" height="115%">
-      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.6" />
+    <filter id="ccnt_shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.65" />
     </filter>
 
-    <filter id="cnt_glow_filt" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="ccnt_bloom" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="2.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
-  <!-- 3D Glass Surface -->
-  <g filter="url(#cnt_shadow)">
-    <rect x="2" y="2" width="916" height="84" rx="14" fill="url(#cnt_glass_fill)" />
-    <rect x="2" y="2" width="916" height="35" rx="14" fill="url(#cnt_sheen)" />
-    <rect x="2" y="2" width="916" height="84" rx="14" fill="none" stroke="url(#cnt_glass_border)" stroke-width="1.6" />
+  <g filter="url(#ccnt_shadow)">
+    <rect x="2" y="2" width="936" height="80" rx="14" fill="url(#ccnt_bg)" />
+    <rect x="2" y="2" width="936" height="35" rx="14" fill="url(#ccnt_sheen)" />
+    <rect x="2" y="2" width="936" height="80" rx="14" fill="none" stroke="url(#ccnt_border)" stroke-width="1.6" />
   </g>
 
-  <!-- Header -->
-  <g transform="translate(32, 42)">
-    <rect x="0" y="-12" width="10" height="22" rx="3" fill="#C77B9B" filter="url(#cnt_glow_filt)">
+  <g transform="translate(32, 40)">
+    <rect x="0" y="-12" width="10" height="22" rx="3" fill="#FF1A66" filter="url(#ccnt_bloom)">
       <animate attributeName="fill-opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite" />
     </rect>
-    <text x="20" y="4" fill="#F8F0F3" font-size="16" font-weight="800" letter-spacing="1">
+    <text x="20" y="4" fill="#FFFFFF" font-size="16" font-weight="800" letter-spacing="1">
       06 // GITHUB CONTRIBUTION MATRIX &amp; COMMIT STREAM
     </text>
-    <text x="710" y="4" fill="#C77B9B" font-size="11" font-family="'Courier New', monospace" letter-spacing="1">
+    <text x="730" y="4" fill="#FF70A6" font-size="11" font-family="'Courier New', monospace" letter-spacing="1">
       LIVE TELEMETRY
     </text>
-    <line x1="0" y1="18" x2="856" y2="18" stroke="#451126" stroke-width="1.2" stroke-dasharray="6 4" />
+    <line x1="0" y1="18" x2="876" y2="18" stroke="#400015" stroke-width="1.2" stroke-dasharray="6 4" />
   </g>
 </svg>
