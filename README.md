@@ -58,12 +58,6 @@
   <img src="assets/card-skills.svg" alt="Technical Arsenal & Stack Matrix" width="100%" />
 </div>
 
-<br/>
-
-<div align="center">
-  <!-- 05 Milestones Card -->
-  <img src="assets/card-milestones.svg" alt="Academic & Co-Curricular Milestones" width="100%" />
-</div>
 
 <br/>
 

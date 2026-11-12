@@ -92,11 +92,11 @@
     </text>
   </g>
 
-  <!-- Academic Footnote Line -->
+  <!-- AI Specialization Footnote Line -->
   <g transform="translate(52, 288)">
     <line x1="0" y1="-14" x2="560" y2="-14" stroke="#4D0B26" stroke-width="1" />
     <text x="0" y="0" fill="#D97298" font-size="10.5" font-family="'Courier New', Courier, monospace" letter-spacing="1">
-      B.TECH IN ARTIFICIAL INTELLIGENCE &amp; DATA SCIENCE • KONGUNADU COLLEGE
+      AUTONOMOUS AGENTS • MULTIMODAL COMPUTER VISION • HIGH-PERFORMANCE BACKENDS
     </text>
   </g>
 
