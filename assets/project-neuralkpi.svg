@@ -33,8 +33,15 @@
   <!-- Base Shell -->
   <rect width="940" height="240" fill="url(#n_bg_grad)" />
   <rect width="940" height="240" fill="url(#n_right_glow)" />
-  <rect width="940" height="50" fill="url(#n_sheen)" />
   <rect x="2" y="2" width="936" height="236" rx="15" fill="none" stroke="url(#n_border)" stroke-width="1.6" />
+
+  <!-- Animated Dynamic Moving Border Dots -->
+  <rect x="2" y="2" width="936" height="236" rx="15" fill="none" stroke="#FF1A66" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="6 32 14 65 4 32 20 180" filter="url(#n_bloom)">
+    <animate attributeName="stroke-dashoffset" values="0;-353" dur="5s" repeatCount="indefinite" />
+  </rect>
+  <rect x="2" y="2" width="936" height="236" rx="15" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="3 350" filter="url(#n_bloom)">
+    <animate attributeName="stroke-dashoffset" values="0;-353" dur="5s" repeatCount="indefinite" />
+  </rect>
 
   <!-- Left Content Column -->
   <g transform="translate(42, 32)">
