@@ -1,189 +1,189 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 350" width="100%" height="auto" style="border-radius: 14px; overflow: hidden; background: #0D050A; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Ubuntu', 'SF Pro Display', sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 310" width="100%" height="auto" style="border-radius: 16px; overflow: hidden; background: #070205; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Ubuntu', 'SF Pro Display', sans-serif;">
   <defs>
-    <!-- Background Gradients -->
-    <linearGradient id="hero_bg_grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1A0A14" />
-      <stop offset="40%" stop-color="#0E050B" />
-      <stop offset="100%" stop-color="#260919" />
+    <!-- Deep Obsidian to Ruby Velvet Gradient -->
+    <linearGradient id="cyber_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14030D" />
+      <stop offset="35%" stop-color="#070205" />
+      <stop offset="70%" stop-color="#0E0209" />
+      <stop offset="100%" stop-color="#1F0414" />
     </linearGradient>
 
-    <!-- Glowing Wine Radial -->
-    <radialGradient id="hero_radial_wine" cx="82%" cy="30%" r="65%">
-      <stop offset="0%" stop-color="#801D46" stop-opacity="0.55" />
-      <stop offset="45%" stop-color="#4A1229" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#0E050B" stop-opacity="0" />
+    <!-- Vibrant Ruby Glows -->
+    <radialGradient id="ruby_glow_right" cx="85%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FF1A66" stop-opacity="0.38" />
+      <stop offset="40%" stop-color="#990033" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#070205" stop-opacity="0" />
     </radialGradient>
 
-    <radialGradient id="hero_radial_left" cx="15%" cy="85%" r="50%">
-      <stop offset="0%" stop-color="#5C1433" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#0E050B" stop-opacity="0" />
+    <radialGradient id="ruby_glow_left" cx="10%" cy="80%" r="55%">
+      <stop offset="0%" stop-color="#80002A" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#070205" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Text Gradients -->
-    <linearGradient id="hero_name_grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="50%" stop-color="#FCEEF4" />
-      <stop offset="100%" stop-color="#E5B5C7" />
-    </linearGradient>
-
-    <!-- Sweeping Laser Beam -->
-    <linearGradient id="laser_beam" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#451126" stop-opacity="0" />
-      <stop offset="40%" stop-color="#C77B9B" stop-opacity="0.8" />
+    <!-- Holographic Laser Line Gradient -->
+    <linearGradient id="neon_laser" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF1A66" stop-opacity="0" />
+      <stop offset="30%" stop-color="#FF1A66" stop-opacity="0.9" />
       <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1" />
-      <stop offset="60%" stop-color="#E5B5C7" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#451126" stop-opacity="0" />
+      <stop offset="70%" stop-color="#FF70A6" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#FF1A66" stop-opacity="0" />
     </linearGradient>
 
-    <!-- Grid Pattern -->
-    <pattern id="tech_grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#701A3D" stroke-width="0.8" stroke-opacity="0.25" />
-      <circle cx="0" cy="0" r="1.2" fill="#E5B5C7" fill-opacity="0.35" />
+    <!-- Text Shimmer -->
+    <linearGradient id="name_shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="45%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#FFA8C5" />
+      <stop offset="100%" stop-color="#FF2A6D" />
+    </linearGradient>
+
+    <!-- High-Tech Fine Grid Pattern -->
+    <pattern id="hud_grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#FF1A66" stroke-width="0.7" stroke-opacity="0.15" />
+      <circle cx="0" cy="0" r="1.2" fill="#FF70A6" fill-opacity="0.3" />
     </pattern>
 
-    <!-- Filters -->
-    <filter id="bloom" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
+    <!-- Filters for Neon Bloom -->
+    <filter id="neon_bloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
-    <filter id="soft_bloom" x="-10%" y="-10%" width="120%" height="120%">
+    <filter id="crisp_glow" x="-10%" y="-10%" width="120%" height="120%">
       <feGaussianBlur stdDeviation="1.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
-  <!-- Base Backdrops -->
-  <rect width="920" height="350" fill="url(#hero_bg_grad)" />
-  <rect width="920" height="350" fill="url(#hero_radial_wine)" />
-  <rect width="920" height="350" fill="url(#hero_radial_left)" />
-  <rect width="920" height="350" fill="url(#tech_grid)" opacity="0.9" />
+  <!-- Background Layering -->
+  <rect width="940" height="310" fill="url(#cyber_bg)" />
+  <rect width="940" height="310" fill="url(#ruby_glow_right)" />
+  <rect width="940" height="310" fill="url(#ruby_glow_left)" />
+  <rect width="940" height="310" fill="url(#hud_grid)" opacity="0.85" />
 
-  <!-- Borders -->
-  <rect x="1" y="1" width="918" height="348" rx="13" fill="none" stroke="#54152F" stroke-width="1.8" />
-  <rect x="7" y="7" width="906" height="336" rx="9" fill="none" stroke="#801D46" stroke-width="0.8" stroke-dasharray="8 6" stroke-opacity="0.45" />
+  <!-- Outer Glass Frame with Metallic Ruby Gradient Border -->
+  <rect x="2" y="2" width="936" height="306" rx="15" fill="none" stroke="#660A2B" stroke-width="1.8" />
+  <rect x="7" y="7" width="926" height="296" rx="11" fill="none" stroke="#FF1A66" stroke-width="0.8" stroke-dasharray="10 8" stroke-opacity="0.4" />
 
-  <!-- Animated Waveform Trace (Radar / Geophone signal) -->
-  <g transform="translate(0, 320)" opacity="0.6">
-    <path d="M 0 0 L 120 0 L 140 -12 L 155 14 L 170 -18 L 185 22 L 200 -28 L 215 18 L 230 -10 L 250 0 L 450 0 L 470 -8 L 485 10 L 500 -12 L 515 8 L 530 0 L 920 0" fill="none" stroke="#C77B9B" stroke-width="1.2" stroke-opacity="0.4">
-      <animate attributeName="stroke-dasharray" values="0,1000; 1000,0" dur="8s" repeatCount="indefinite" />
-    </path>
-    <path d="M 0 0 L 120 0 L 140 -12 L 155 14 L 170 -18 L 185 22 L 200 -28 L 215 18 L 230 -10 L 250 0 L 450 0 L 470 -8 L 485 10 L 500 -12 L 515 8 L 530 0 L 920 0" fill="none" stroke="#FFFFFF" stroke-width="1.8" filter="url(#bloom)" stroke-dasharray="80 840">
-      <animate attributeName="stroke-dashoffset" values="920; -920" dur="4s" repeatCount="indefinite" />
-    </path>
-  </g>
+  <!-- Corner Tech HUD Brackets -->
+  <path d="M 18 35 L 18 18 L 35 18" fill="none" stroke="#FF2A6D" stroke-width="2.5" />
+  <path d="M 922 35 L 922 18 L 905 18" fill="none" stroke="#FF2A6D" stroke-width="2.5" />
+  <path d="M 18 275 L 18 292 L 35 292" fill="none" stroke="#FF2A6D" stroke-width="2.5" />
+  <path d="M 922 275 L 922 292 L 905 292" fill="none" stroke="#FF2A6D" stroke-width="2.5" />
 
-  <!-- Interactive Radar Orbit Geometry -->
-  <g transform="translate(745, 165)" stroke="#C77B9B" fill="none">
-    <!-- Outer dashed trajectory -->
-    <circle r="115" stroke-width="1" stroke-dasharray="12 10" stroke-opacity="0.3">
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="45s" repeatCount="indefinite" />
+  <!-- Interactive Radar / Holographic Orbital Ring on Right Side -->
+  <g transform="translate(765, 155)" stroke="#FF2A6D" fill="none">
+    <!-- Outer dashed telemetry ring -->
+    <circle r="118" stroke-width="1.2" stroke-dasharray="16 12" stroke-opacity="0.35">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="40s" repeatCount="indefinite" />
     </circle>
-    
-    <!-- Rotating satellite node on outer ring -->
+
+    <!-- Outer satellite data beacon -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="45s" repeatCount="indefinite" />
-      <circle cx="115" cy="0" r="4.5" fill="#E5B5C7" filter="url(#bloom)" />
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="40s" repeatCount="indefinite" />
+      <circle cx="118" cy="0" r="5" fill="#FFFFFF" filter="url(#neon_bloom)" />
+      <circle cx="118" cy="0" r="9" stroke="#FF1A66" stroke-width="1" stroke-opacity="0.6" />
     </g>
 
-    <!-- Middle radar ring -->
-    <circle r="80" stroke-width="1.4" stroke-dasharray="8 6 22 6" stroke-opacity="0.55" stroke="#E5B5C7">
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="25s" repeatCount="indefinite" />
+    <!-- Mid counter-rotating orbital ring -->
+    <circle r="82" stroke-width="1.5" stroke-dasharray="8 6 24 6" stroke-opacity="0.55" stroke="#FFA8C5">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="24s" repeatCount="indefinite" />
     </circle>
 
-    <!-- Inner pulsing ring -->
-    <circle r="48" stroke-width="1.6" stroke-opacity="0.75" stroke="#F8F0F3">
-      <animate attributeName="r" values="44;52;44" dur="4s" repeatCount="indefinite" />
-      <animate attributeName="stroke-opacity" values="0.4;0.9;0.4" dur="4s" repeatCount="indefinite" />
+    <!-- Inner breathing target ring -->
+    <circle r="50" stroke-width="1.8" stroke-opacity="0.75" stroke="#FFFFFF">
+      <animate attributeName="r" values="46;54;46" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="stroke-opacity" values="0.4;0.9;0.4" dur="3.5s" repeatCount="indefinite" />
     </circle>
 
-    <!-- Core pulse -->
-    <circle r="8" fill="#FFFFFF" filter="url(#bloom)">
-      <animate attributeName="fill-opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite" />
-      <animate attributeName="r" values="7;9;7" dur="2s" repeatCount="indefinite" />
+    <!-- Neon Center Core Pulse -->
+    <circle r="9" fill="#FF1A66" filter="url(#neon_bloom)">
+      <animate attributeName="fill-opacity" values="0.7;1;0.7" dur="1.8s" repeatCount="indefinite" />
+      <animate attributeName="r" values="8;11;8" dur="1.8s" repeatCount="indefinite" />
     </circle>
-    <circle r="20" stroke="#E5B5C7" stroke-width="1.2" stroke-dasharray="3 4" stroke-opacity="0.6" />
+    <circle r="4" fill="#FFFFFF" />
 
-    <!-- Coordinate Crosshairs -->
-    <line x1="-135" y1="0" x2="135" y2="0" stroke="#701A3D" stroke-width="0.8" stroke-opacity="0.5" />
-    <line x1="0" y1="-135" x2="0" y2="135" stroke="#701A3D" stroke-width="0.8" stroke-opacity="0.5" />
+    <!-- Crosshair telemetry -->
+    <line x1="-135" y1="0" x2="135" y2="0" stroke="#FF1A66" stroke-width="0.8" stroke-opacity="0.4" />
+    <line x1="0" y1="-135" x2="0" y2="135" stroke="#FF1A66" stroke-width="0.8" stroke-opacity="0.4" />
   </g>
 
-  <!-- Top Status Indicator -->
-  <g transform="translate(50, 42)">
-    <rect x="0" y="0" width="310" height="28" rx="14" fill="#1A0A14" stroke="#701A3D" stroke-width="1.2" />
-    <circle cx="15" cy="14" r="4.5" fill="#C77B9B">
-      <animate attributeName="fill-opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite" />
-      <animate attributeName="r" values="3.8;5.2;3.8" dur="1.8s" repeatCount="indefinite" />
-    </circle>
-    <text x="28" y="18" fill="#FCEEF4" font-size="11.5" font-weight="700" letter-spacing="1.4" font-family="'Courier New', Courier, monospace">SYSTEM: ONLINE // KONGUNADU '28</text>
+  <!-- Real-Time Anomaly Waveform Trace (PRISM 60GHz mmWave simulation) -->
+  <g transform="translate(0, 275)" opacity="0.75">
+    <path d="M 0 0 L 140 0 L 160 -16 L 175 18 L 190 -24 L 205 30 L 220 -38 L 235 24 L 250 -12 L 270 0 L 480 0 L 500 -12 L 515 14 L 530 -16 L 545 10 L 560 0 L 940 0" fill="none" stroke="#80002A" stroke-width="1.4" />
+    <path d="M 0 0 L 140 0 L 160 -16 L 175 18 L 190 -24 L 205 30 L 220 -38 L 235 24 L 250 -12 L 270 0 L 480 0 L 500 -12 L 515 14 L 530 -16 L 545 10 L 560 0 L 940 0" fill="none" stroke="#FFFFFF" stroke-width="2" filter="url(#neon_bloom)" stroke-dasharray="120 820">
+      <animate attributeName="stroke-dashoffset" values="940; -940" dur="3.5s" repeatCount="indefinite" />
+    </path>
   </g>
 
-  <!-- Big Name Title -->
-  <g transform="translate(50, 130)">
-    <text x="0" y="0" fill="url(#hero_name_grad)" font-size="46" font-weight="900" letter-spacing="-0.5" filter="url(#soft_bloom)">
+  <!-- Top Status Pill (Terminal Style) -->
+  <g transform="translate(48, 38)">
+    <rect x="0" y="0" width="310" height="28" rx="14" fill="#15030E" stroke="#FF1A66" stroke-width="1.2" />
+    <circle cx="15" cy="14" r="4.5" fill="#FF1A66" filter="url(#crisp_glow)">
+      <animate attributeName="fill-opacity" values="0.3;1;0.3" dur="1.6s" repeatCount="indefinite" />
+      <animate attributeName="r" values="3.5;5.5;3.5" dur="1.6s" repeatCount="indefinite" />
+    </circle>
+    <text x="28" y="18" fill="#FFFFFF" font-size="11.5" font-weight="700" letter-spacing="1.5" font-family="'Courier New', Courier, monospace">SYSTEM: ONLINE // KONGUNADU '28</text>
+  </g>
+
+  <!-- Big Bold Cinematic Name -->
+  <g transform="translate(48, 122)">
+    <text x="0" y="0" fill="url(#name_shimmer)" font-size="48" font-weight="900" letter-spacing="0.5" filter="url(#crisp_glow)">
       HARISH SENTHILRAJA
     </text>
   </g>
 
-  <!-- Subtitle -->
-  <g transform="translate(50, 168)">
-    <text x="0" y="0" fill="#E5B5C7" font-size="20" font-weight="700" letter-spacing="0.5">
+  <!-- Positioning Subtitle -->
+  <g transform="translate(48, 158)">
+    <text x="0" y="0" fill="#FF70A6" font-size="20" font-weight="700" letter-spacing="0.8">
       AI &amp; Backend Software Engineer
     </text>
   </g>
 
-  <!-- Architecture Specialization Line -->
-  <g transform="translate(50, 198)">
-    <text x="0" y="0" fill="#F8F0F3" font-size="13.5" font-weight="400" fill-opacity="0.92" letter-spacing="0.3">
-      Edge Computing <tspan fill="#C77B9B">•</tspan> Multi-Agent AI Ecosystems <tspan fill="#C77B9B">•</tspan> High-Throughput Distributed Backends
+  <!-- Specialization Descriptor -->
+  <g transform="translate(48, 186)">
+    <text x="0" y="0" fill="#FCEEF4" font-size="13" font-weight="400" fill-opacity="0.9" letter-spacing="0.4">
+      Edge Computing <tspan fill="#FF1A66">•</tspan> Multi-Agent AI Architecture <tspan fill="#FF1A66">•</tspan> High-Throughput Linux Backends
     </text>
   </g>
 
-  <!-- Sweeping Laser Beam Bar -->
-  <g transform="translate(50, 224)">
-    <line x1="0" y1="0" x2="630" y2="0" stroke="#451126" stroke-width="2" />
-    <line x1="0" y1="0" x2="250" y2="0" stroke="url(#laser_beam)" stroke-width="3" filter="url(#bloom)">
-      <animate attributeName="x1" values="0;400;0" dur="5s" repeatCount="indefinite" />
-      <animate attributeName="x2" values="250;650;250" dur="5s" repeatCount="indefinite" />
+  <!-- Animated Glowing Sweeper Laser Line -->
+  <g transform="translate(48, 206)">
+    <line x1="0" y1="0" x2="640" y2="0" stroke="#400015" stroke-width="2" />
+    <line x1="0" y1="0" x2="260" y2="0" stroke="url(#neon_laser)" stroke-width="3.5" filter="url(#neon_bloom)">
+      <animate attributeName="x1" values="0;400;0" dur="4.5s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="260;660;260" dur="4.5s" repeatCount="indefinite" />
     </line>
   </g>
 
-  <!-- Tech Tags Matrix -->
-  <g transform="translate(50, 256)">
-    <!-- Tag 1 -->
+  <!-- Sleek Glowing HUD Pills -->
+  <g transform="translate(48, 230)">
+    <!-- Pill 1: ESP32-S3 -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="144" height="32" rx="7" fill="#14070F" stroke="#701A3D" stroke-width="1.2" />
-      <circle cx="15" cy="16" r="3.5" fill="#E5B5C7" />
-      <text x="26" y="20" fill="#FFFFFF" font-size="12" font-weight="600">ESP32-S3 / Edge</text>
+      <rect x="0" y="0" width="135" height="30" rx="7" fill="#14020C" stroke="#FF1A66" stroke-width="1.2" />
+      <circle cx="14" cy="15" r="3.5" fill="#FF2A6D" />
+      <text x="25" y="19" fill="#FFFFFF" font-size="11.5" font-weight="600">ESP32-S3 / Edge</text>
     </g>
 
-    <!-- Tag 2 -->
-    <g transform="translate(156, 0)">
-      <rect x="0" y="0" width="176" height="32" rx="7" fill="#14070F" stroke="#701A3D" stroke-width="1.2" />
-      <circle cx="15" cy="16" r="3.5" fill="#C77B9B" />
-      <text x="26" y="20" fill="#FFFFFF" font-size="12" font-weight="600">LangGraph / Multi-Agent</text>
+    <!-- Pill 2: LangGraph -->
+    <g transform="translate(147, 0)">
+      <rect x="0" y="0" width="165" height="30" rx="7" fill="#14020C" stroke="#FF1A66" stroke-width="1.2" />
+      <circle cx="14" cy="15" r="3.5" fill="#FFA8C5" />
+      <text x="25" y="19" fill="#FFFFFF" font-size="11.5" font-weight="600">LangGraph / Multi-Agent</text>
     </g>
 
-    <!-- Tag 3 -->
-    <g transform="translate(344, 0)">
-      <rect x="0" y="0" width="156" height="32" rx="7" fill="#14070F" stroke="#701A3D" stroke-width="1.2" />
-      <circle cx="15" cy="16" r="3.5" fill="#E5B5C7" />
-      <text x="26" y="20" fill="#FFFFFF" font-size="12" font-weight="600">FastAPI &amp; Container</text>
+    <!-- Pill 3: FastAPI -->
+    <g transform="translate(324, 0)">
+      <rect x="0" y="0" width="145" height="30" rx="7" fill="#14020C" stroke="#FF1A66" stroke-width="1.2" />
+      <circle cx="14" cy="15" r="3.5" fill="#FF2A6D" />
+      <text x="25" y="19" fill="#FFFFFF" font-size="11.5" font-weight="600">FastAPI &amp; Container</text>
     </g>
 
-    <!-- Tag 4 -->
-    <g transform="translate(512, 0)">
-      <rect x="0" y="0" width="152" height="32" rx="7" fill="#14070F" stroke="#701A3D" stroke-width="1.2" />
-      <circle cx="15" cy="16" r="3.5" fill="#C77B9B" />
-      <text x="26" y="20" fill="#FFFFFF" font-size="12" font-weight="600">Arch / Terminal-First</text>
+    <!-- Pill 4: Arch Linux -->
+    <g transform="translate(481, 0)">
+      <rect x="0" y="0" width="140" height="30" rx="7" fill="#14020C" stroke="#FF1A66" stroke-width="1.2" />
+      <circle cx="14" cy="15" r="3.5" fill="#FFA8C5" />
+      <text x="25" y="19" fill="#FFFFFF" font-size="11.5" font-weight="600">Arch / Terminal-First</text>
     </g>
-  </g>
-
-  <!-- Location & Metadata -->
-  <g transform="translate(50, 314)">
-    <text x="0" y="0" fill="#C77B9B" font-size="10.5" font-family="'Courier New', Courier, monospace" letter-spacing="1">
-      LOCATION: NAMAKKAL, TAMIL NADU, IN // REPO: github.com/Harish-628
-    </text>
   </g>
 </svg>
