@@ -87,7 +87,7 @@
   <!-- Column 2: Multi-Agent AI -->
   <g transform="translate(325, 82)">
     <rect width="270" height="144" rx="10" fill="url(#ov_inner_card)" stroke="#701A3D" stroke-width="1" />
-    <rect width="270" height="25" rx="10" fill="url(#ov_sheen)" />
+    <rect width="270" height="25" rx="10" fill="url(#ov_glass_sheen)" />
     <circle cx="22" cy="24" r="8" fill="#451126" stroke="#E5B5C7" stroke-width="1.2" />
     <circle cx="22" cy="24" r="3" fill="#C77B9B" />
     <text x="38" y="28" fill="#F8F0F3" font-size="13" font-weight="700">Multi-Agent Systems</text>
@@ -102,7 +102,7 @@
   <!-- Column 3: Systems & Linux -->
   <g transform="translate(618, 82)">
     <rect width="270" height="144" rx="10" fill="url(#ov_inner_card)" stroke="#701A3D" stroke-width="1" />
-    <rect width="270" height="25" rx="10" fill="url(#ov_sheen)" />
+    <rect width="270" height="25" rx="10" fill="url(#ov_glass_sheen)" />
     <circle cx="22" cy="24" r="8" fill="#451126" stroke="#C77B9B" stroke-width="1.2" />
     <circle cx="22" cy="24" r="3" fill="#E5B5C7" />
     <text x="38" y="28" fill="#F8F0F3" font-size="13" font-weight="700">Systems &amp; Architecture</text>

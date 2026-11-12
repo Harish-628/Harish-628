@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 320" width="100%" height="auto" style="border-radius: 14px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Ubuntu', sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 326" width="100%" height="auto" style="border-radius: 14px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Ubuntu', sans-serif;">
   <defs>
     <linearGradient id="sk_glass_fill" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#240B1A" stop-opacity="0.95" />
-      <stop offset="60%" stop-color="#12050E" stop-opacity="0.98" />
-      <stop offset="100%" stop-color="#1E0815" stop-opacity="0.95" />
+      <stop offset="0%" stop-color="#240B1A" stop-opacity="0.96" />
+      <stop offset="60%" stop-color="#12050E" stop-opacity="0.99" />
+      <stop offset="100%" stop-color="#1E0815" stop-opacity="0.96" />
     </linearGradient>
 
     <linearGradient id="sk_glass_border" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -35,10 +35,10 @@
 
   <!-- 3D Glass Surface -->
   <g filter="url(#sk_shadow)">
-    <rect x="2" y="2" width="916" height="314" rx="14" fill="url(#sk_glass_fill)" />
-    <rect x="2" y="2" width="916" height="314" fill="url(#sk_glow)" />
+    <rect x="2" y="2" width="916" height="320" rx="14" fill="url(#sk_glass_fill)" />
+    <rect x="2" y="2" width="916" height="320" fill="url(#sk_glow)" />
     <rect x="2" y="2" width="916" height="50" rx="14" fill="url(#sk_sheen)" />
-    <rect x="2" y="2" width="916" height="314" rx="14" fill="none" stroke="url(#sk_glass_border)" stroke-width="1.6" />
+    <rect x="2" y="2" width="916" height="320" rx="14" fill="none" stroke="url(#sk_glass_border)" stroke-width="1.6" />
   </g>
 
   <!-- Header -->
@@ -54,118 +54,147 @@
 
   <!-- Row 1: Languages -->
   <g transform="translate(32, 78)">
-    <rect x="0" y="0" width="160" height="30" rx="6" fill="#140610" stroke="#701A3D" stroke-width="1" />
-    <text x="14" y="20" fill="#E5B5C7" font-size="12" font-weight="700">Languages</text>
+    <rect x="0" y="0" width="165" height="32" rx="6" fill="#140610" stroke="#701A3D" stroke-width="1" />
+    <text x="14" y="21" fill="#E5B5C7" font-size="12" font-weight="700">Languages</text>
 
-    <!-- Pills -->
-    <g transform="translate(176, 0)">
-      <rect x="0" y="0" width="70" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">Python</text>
-
-      <rect x="78" y="0" width="60" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="14" y="20" fill="#FFFFFF" font-size="12">C++</text>
-
-      <rect x="146" y="0" width="55" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="14" y="20" fill="#FFFFFF" font-size="12">SQL</text>
-
-      <rect x="209" y="0" width="60" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="14" y="20" fill="#FFFFFF" font-size="12">Bash</text>
+    <!-- Pills with distinct offsets -->
+    <g transform="translate(180, 0)">
+      <g transform="translate(0, 0)">
+        <rect width="75" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="37.5" y="20.5" fill="#FFFFFF" font-size="12" font-weight="500" text-anchor="middle">Python</text>
+      </g>
+      <g transform="translate(85, 0)">
+        <rect width="65" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="32.5" y="20.5" fill="#FFFFFF" font-size="12" font-weight="500" text-anchor="middle">C++</text>
+      </g>
+      <g transform="translate(160, 0)">
+        <rect width="65" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="32.5" y="20.5" fill="#FFFFFF" font-size="12" font-weight="500" text-anchor="middle">SQL</text>
+      </g>
+      <g transform="translate(235, 0)">
+        <rect width="68" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="34" y="20.5" fill="#FFFFFF" font-size="12" font-weight="500" text-anchor="middle">Bash</text>
+      </g>
     </g>
   </g>
 
   <!-- Row 2: AI & ML -->
   <g transform="translate(32, 122)">
-    <rect x="0" y="0" width="160" height="30" rx="6" fill="#140610" stroke="#701A3D" stroke-width="1" />
-    <text x="14" y="20" fill="#E5B5C7" font-size="12" font-weight="700">AI &amp; Deep Learning</text>
+    <rect x="0" y="0" width="165" height="32" rx="6" fill="#140610" stroke="#701A3D" stroke-width="1" />
+    <text x="14" y="21" fill="#E5B5C7" font-size="12" font-weight="700">AI &amp; Machine Learning</text>
 
-    <!-- Pills -->
-    <g transform="translate(176, 0)">
-      <rect x="0" y="0" width="95" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">LangGraph</text>
-
-      <rect x="103" y="0" width="92" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">LangChain</text>
-
-      <rect x="203" y="0" width="96" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">TensorFlow</text>
-
-      <rect x="307" y="0" width="70" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">YOLOv8</text>
-
-      <rect x="385" y="0" width="75" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">YAMNet</text>
-
-      <rect x="468" y="0" width="70" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">OpenCV</text>
-
-      <rect x="546" y="0" width="85" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">MediaPipe</text>
+    <!-- Pills with distinct offsets -->
+    <g transform="translate(180, 0)">
+      <g transform="translate(0, 0)">
+        <rect width="90" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="45" y="20.5" fill="#FFFFFF" font-size="11.5" font-weight="500" text-anchor="middle">LangGraph</text>
+      </g>
+      <g transform="translate(98, 0)">
+        <rect width="90" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="45" y="20.5" fill="#FFFFFF" font-size="11.5" font-weight="500" text-anchor="middle">LangChain</text>
+      </g>
+      <g transform="translate(196, 0)">
+        <rect width="96" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="48" y="20.5" fill="#FFFFFF" font-size="11.5" font-weight="500" text-anchor="middle">TensorFlow</text>
+      </g>
+      <g transform="translate(300, 0)">
+        <rect width="72" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="36" y="20.5" fill="#FFFFFF" font-size="11.5" font-weight="500" text-anchor="middle">YOLOv8</text>
+      </g>
+      <g transform="translate(380, 0)">
+        <rect width="74" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="37" y="20.5" fill="#FFFFFF" font-size="11.5" font-weight="500" text-anchor="middle">YAMNet</text>
+      </g>
+      <g transform="translate(462, 0)">
+        <rect width="72" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="36" y="20.5" fill="#FFFFFF" font-size="11.5" font-weight="500" text-anchor="middle">OpenCV</text>
+      </g>
+      <g transform="translate(542, 0)">
+        <rect width="84" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="42" y="20.5" fill="#FFFFFF" font-size="11.5" font-weight="500" text-anchor="middle">MediaPipe</text>
+      </g>
     </g>
   </g>
 
   <!-- Row 3: Backend & Web -->
   <g transform="translate(32, 166)">
-    <rect x="0" y="0" width="160" height="30" rx="6" fill="#140610" stroke="#701A3D" stroke-width="1" />
-    <text x="14" y="20" fill="#E5B5C7" font-size="12" font-weight="700">Backend &amp; Services</text>
+    <rect x="0" y="0" width="165" height="32" rx="6" fill="#140610" stroke="#701A3D" stroke-width="1" />
+    <text x="14" y="21" fill="#E5B5C7" font-size="12" font-weight="700">Backend &amp; Services</text>
 
-    <!-- Pills -->
-    <g transform="translate(176, 0)">
-      <rect x="0" y="0" width="70" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">FastAPI</text>
-
-      <rect x="78" y="0" width="80" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">Streamlit</text>
-
-      <rect x="166" y="0" width="105" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">RESTful APIs</text>
-
-      <rect x="279" y="0" width="130" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">Asynchronous I/O</text>
+    <!-- Pills with distinct offsets -->
+    <g transform="translate(180, 0)">
+      <g transform="translate(0, 0)">
+        <rect width="78" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="39" y="20.5" fill="#FFFFFF" font-size="12" font-weight="500" text-anchor="middle">FastAPI</text>
+      </g>
+      <g transform="translate(86, 0)">
+        <rect width="84" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="42" y="20.5" fill="#FFFFFF" font-size="12" font-weight="500" text-anchor="middle">Streamlit</text>
+      </g>
+      <g transform="translate(178, 0)">
+        <rect width="115" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="57.5" y="20.5" fill="#FFFFFF" font-size="12" font-weight="500" text-anchor="middle">RESTful APIs</text>
+      </g>
+      <g transform="translate(301, 0)">
+        <rect width="145" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="72.5" y="20.5" fill="#FFFFFF" font-size="12" font-weight="500" text-anchor="middle">Asynchronous I/O</text>
+      </g>
     </g>
   </g>
 
   <!-- Row 4: DevOps & Systems -->
   <g transform="translate(32, 210)">
-    <rect x="0" y="0" width="160" height="30" rx="6" fill="#140610" stroke="#701A3D" stroke-width="1" />
-    <text x="14" y="20" fill="#E5B5C7" font-size="12" font-weight="700">DevOps &amp; Linux</text>
+    <rect x="0" y="0" width="165" height="32" rx="6" fill="#140610" stroke="#701A3D" stroke-width="1" />
+    <text x="14" y="21" fill="#E5B5C7" font-size="12" font-weight="700">DevOps &amp; Linux</text>
 
-    <!-- Pills -->
-    <g transform="translate(176, 0)">
-      <rect x="0" y="0" width="70" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">Docker</text>
-
-      <rect x="78" y="0" width="95" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">Kubernetes</text>
-
-      <rect x="181" y="0" width="95" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">Arch Linux</text>
-
-      <rect x="284" y="0" width="80" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">Xubuntu</text>
-
-      <rect x="372" y="0" width="70" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">GitOps</text>
+    <!-- Pills with distinct offsets -->
+    <g transform="translate(180, 0)">
+      <g transform="translate(0, 0)">
+        <rect width="75" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="37.5" y="20.5" fill="#FFFFFF" font-size="12" font-weight="500" text-anchor="middle">Docker</text>
+      </g>
+      <g transform="translate(83, 0)">
+        <rect width="102" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="51" y="20.5" fill="#FFFFFF" font-size="12" font-weight="500" text-anchor="middle">Kubernetes</text>
+      </g>
+      <g transform="translate(193, 0)">
+        <rect width="98" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="49" y="20.5" fill="#FFFFFF" font-size="12" font-weight="500" text-anchor="middle">Arch Linux</text>
+      </g>
+      <g transform="translate(299, 0)">
+        <rect width="85" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="42.5" y="20.5" fill="#FFFFFF" font-size="12" font-weight="500" text-anchor="middle">Xubuntu</text>
+      </g>
+      <g transform="translate(392, 0)">
+        <rect width="75" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="37.5" y="20.5" fill="#FFFFFF" font-size="12" font-weight="500" text-anchor="middle">GitOps</text>
+      </g>
     </g>
   </g>
 
   <!-- Row 5: Hardware & Edge -->
   <g transform="translate(32, 254)">
-    <rect x="0" y="0" width="160" height="30" rx="6" fill="#140610" stroke="#701A3D" stroke-width="1" />
-    <text x="14" y="20" fill="#E5B5C7" font-size="12" font-weight="700">Hardware &amp; Edge</text>
+    <rect x="0" y="0" width="165" height="32" rx="6" fill="#140610" stroke="#701A3D" stroke-width="1" />
+    <text x="14" y="21" fill="#E5B5C7" font-size="12" font-weight="700">Hardware &amp; Edge</text>
 
-    <!-- Pills -->
-    <g transform="translate(176, 0)">
-      <rect x="0" y="0" width="90" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">ESP32-S3</text>
-
-      <rect x="98" y="0" width="145" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">60GHz mmWave</text>
-
-      <rect x="251" y="0" width="145" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">UWB Mesh Telemetry</text>
-
-      <rect x="404" y="0" width="125" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
-      <text x="12" y="20" fill="#FFFFFF" font-size="12">Wavelet Decomp</text>
+    <!-- Pills with distinct offsets -->
+    <g transform="translate(180, 0)">
+      <g transform="translate(0, 0)">
+        <rect width="90" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="45" y="20.5" fill="#FFFFFF" font-size="12" font-weight="500" text-anchor="middle">ESP32-S3</text>
+      </g>
+      <g transform="translate(98, 0)">
+        <rect width="130" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="65" y="20.5" fill="#FFFFFF" font-size="12" font-weight="500" text-anchor="middle">60GHz mmWave</text>
+      </g>
+      <g transform="translate(236, 0)">
+        <rect width="145" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="72.5" y="20.5" fill="#FFFFFF" font-size="12" font-weight="500" text-anchor="middle">UWB Mesh Arrays</text>
+      </g>
+      <g transform="translate(389, 0)">
+        <rect width="140" height="32" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+        <text x="70" y="20.5" fill="#FFFFFF" font-size="12" font-weight="500" text-anchor="middle">Wavelet Decomp</text>
+      </g>
     </g>
   </g>
 </svg>
