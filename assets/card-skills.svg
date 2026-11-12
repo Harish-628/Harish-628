@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 320" width="100%" height="auto" style="border-radius: 14px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Ubuntu', sans-serif;">
+  <defs>
+    <linearGradient id="sk_glass_fill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#240B1A" stop-opacity="0.95" />
+      <stop offset="60%" stop-color="#12050E" stop-opacity="0.98" />
+      <stop offset="100%" stop-color="#1E0815" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="sk_glass_border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5B5C7" stop-opacity="0.8" />
+      <stop offset="30%" stop-color="#801D46" stop-opacity="0.6" />
+      <stop offset="70%" stop-color="#451126" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#C77B9B" stop-opacity="0.6" />
+    </linearGradient>
+
+    <linearGradient id="sk_sheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+
+    <radialGradient id="sk_glow" cx="90%" cy="15%" r="60%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#10070C" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="sk_shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+
+    <filter id="sk_glow_filt" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- 3D Glass Surface -->
+  <g filter="url(#sk_shadow)">
+    <rect x="2" y="2" width="916" height="314" rx="14" fill="url(#sk_glass_fill)" />
+    <rect x="2" y="2" width="916" height="314" fill="url(#sk_glow)" />
+    <rect x="2" y="2" width="916" height="50" rx="14" fill="url(#sk_sheen)" />
+    <rect x="2" y="2" width="916" height="314" rx="14" fill="none" stroke="url(#sk_glass_border)" stroke-width="1.6" />
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(32, 34)">
+    <rect x="0" y="0" width="10" height="22" rx="3" fill="#E5B5C7" filter="url(#sk_glow_filt)">
+      <animate attributeName="fill-opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite" />
+    </rect>
+    <text x="20" y="16" fill="#F8F0F3" font-size="16" font-weight="800" letter-spacing="1">
+      04 // TECHNICAL ARSENAL &amp; MATRIX
+    </text>
+    <line x1="0" y1="28" x2="856" y2="28" stroke="#451126" stroke-width="1.2" stroke-dasharray="6 4" />
+  </g>
+
+  <!-- Row 1: Languages -->
+  <g transform="translate(32, 78)">
+    <rect x="0" y="0" width="160" height="30" rx="6" fill="#140610" stroke="#701A3D" stroke-width="1" />
+    <text x="14" y="20" fill="#E5B5C7" font-size="12" font-weight="700">Languages</text>
+
+    <!-- Pills -->
+    <g transform="translate(176, 0)">
+      <rect x="0" y="0" width="70" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">Python</text>
+
+      <rect x="78" y="0" width="60" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="14" y="20" fill="#FFFFFF" font-size="12">C++</text>
+
+      <rect x="146" y="0" width="55" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="14" y="20" fill="#FFFFFF" font-size="12">SQL</text>
+
+      <rect x="209" y="0" width="60" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="14" y="20" fill="#FFFFFF" font-size="12">Bash</text>
+    </g>
+  </g>
+
+  <!-- Row 2: AI & ML -->
+  <g transform="translate(32, 122)">
+    <rect x="0" y="0" width="160" height="30" rx="6" fill="#140610" stroke="#701A3D" stroke-width="1" />
+    <text x="14" y="20" fill="#E5B5C7" font-size="12" font-weight="700">AI &amp; Deep Learning</text>
+
+    <!-- Pills -->
+    <g transform="translate(176, 0)">
+      <rect x="0" y="0" width="95" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">LangGraph</text>
+
+      <rect x="103" y="0" width="92" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">LangChain</text>
+
+      <rect x="203" y="0" width="96" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">TensorFlow</text>
+
+      <rect x="307" y="0" width="70" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">YOLOv8</text>
+
+      <rect x="385" y="0" width="75" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">YAMNet</text>
+
+      <rect x="468" y="0" width="70" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">OpenCV</text>
+
+      <rect x="546" y="0" width="85" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">MediaPipe</text>
+    </g>
+  </g>
+
+  <!-- Row 3: Backend & Web -->
+  <g transform="translate(32, 166)">
+    <rect x="0" y="0" width="160" height="30" rx="6" fill="#140610" stroke="#701A3D" stroke-width="1" />
+    <text x="14" y="20" fill="#E5B5C7" font-size="12" font-weight="700">Backend &amp; Services</text>
+
+    <!-- Pills -->
+    <g transform="translate(176, 0)">
+      <rect x="0" y="0" width="70" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">FastAPI</text>
+
+      <rect x="78" y="0" width="80" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">Streamlit</text>
+
+      <rect x="166" y="0" width="105" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">RESTful APIs</text>
+
+      <rect x="279" y="0" width="130" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">Asynchronous I/O</text>
+    </g>
+  </g>
+
+  <!-- Row 4: DevOps & Systems -->
+  <g transform="translate(32, 210)">
+    <rect x="0" y="0" width="160" height="30" rx="6" fill="#140610" stroke="#701A3D" stroke-width="1" />
+    <text x="14" y="20" fill="#E5B5C7" font-size="12" font-weight="700">DevOps &amp; Linux</text>
+
+    <!-- Pills -->
+    <g transform="translate(176, 0)">
+      <rect x="0" y="0" width="70" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">Docker</text>
+
+      <rect x="78" y="0" width="95" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">Kubernetes</text>
+
+      <rect x="181" y="0" width="95" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">Arch Linux</text>
+
+      <rect x="284" y="0" width="80" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">Xubuntu</text>
+
+      <rect x="372" y="0" width="70" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">GitOps</text>
+    </g>
+  </g>
+
+  <!-- Row 5: Hardware & Edge -->
+  <g transform="translate(32, 254)">
+    <rect x="0" y="0" width="160" height="30" rx="6" fill="#140610" stroke="#701A3D" stroke-width="1" />
+    <text x="14" y="20" fill="#E5B5C7" font-size="12" font-weight="700">Hardware &amp; Edge</text>
+
+    <!-- Pills -->
+    <g transform="translate(176, 0)">
+      <rect x="0" y="0" width="90" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">ESP32-S3</text>
+
+      <rect x="98" y="0" width="145" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">60GHz mmWave</text>
+
+      <rect x="251" y="0" width="145" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">UWB Mesh Telemetry</text>
+
+      <rect x="404" y="0" width="125" height="30" rx="6" fill="#200B17" stroke="#451126" stroke-width="1" />
+      <text x="12" y="20" fill="#FFFFFF" font-size="12">Wavelet Decomp</text>
+    </g>
+  </g>
+</svg>

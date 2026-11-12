@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 240" width="100%" height="auto" style="border-radius: 14px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Ubuntu', sans-serif;">
+  <defs>
+    <linearGradient id="ml_glass_fill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#240A1A" stop-opacity="0.95" />
+      <stop offset="60%" stop-color="#140610" stop-opacity="0.98" />
+      <stop offset="100%" stop-color="#1E0815" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="ml_glass_border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5B5C7" stop-opacity="0.8" />
+      <stop offset="30%" stop-color="#801D46" stop-opacity="0.6" />
+      <stop offset="70%" stop-color="#451126" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#C77B9B" stop-opacity="0.6" />
+    </linearGradient>
+
+    <linearGradient id="ml_sheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="ml_shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+
+    <filter id="ml_glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- 3D Glass Shell -->
+  <g filter="url(#ml_shadow)">
+    <rect x="2" y="2" width="916" height="234" rx="14" fill="url(#ml_glass_fill)" />
+    <rect x="2" y="2" width="916" height="50" rx="14" fill="url(#ml_sheen)" />
+    <rect x="2" y="2" width="916" height="234" rx="14" fill="none" stroke="url(#ml_glass_border)" stroke-width="1.6" />
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(32, 34)">
+    <rect x="0" y="0" width="10" height="22" rx="3" fill="#C77B9B" filter="url(#ml_glow)">
+      <animate attributeName="fill-opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite" />
+    </rect>
+    <text x="20" y="16" fill="#F8F0F3" font-size="16" font-weight="800" letter-spacing="1">
+      05 // ACADEMIC &amp; CO-CURRICULAR MILESTONES
+    </text>
+    <line x1="0" y1="28" x2="856" y2="28" stroke="#451126" stroke-width="1.2" stroke-dasharray="6 4" />
+  </g>
+
+  <!-- Content List -->
+  <g transform="translate(32, 80)">
+    <!-- Milestone 1: Education -->
+    <g transform="translate(0, 0)">
+      <circle cx="8" cy="10" r="5" fill="#451126" stroke="#C77B9B" stroke-width="1.5" />
+      <circle cx="8" cy="10" r="2.5" fill="#E5B5C7" />
+      <text x="24" y="14" fill="#FFFFFF" font-size="14" font-weight="700">
+        B.Tech in Artificial Intelligence &amp; Data Science · Kongunadu College of Engineering and Technology
+      </text>
+      <text x="24" y="32" fill="#C77B9B" font-size="12">
+        2024 – 2028 (Expected) // Current CGPA: <tspan fill="#F8F0F3" font-weight="700">7.5</tspan>
+      </text>
+    </g>
+
+    <!-- Milestone 2: Hackathon -->
+    <g transform="translate(0, 52)">
+      <circle cx="8" cy="10" r="5" fill="#451126" stroke="#E5B5C7" stroke-width="1.5" />
+      <circle cx="8" cy="10" r="2.5" fill="#C77B9B" />
+      <text x="24" y="14" fill="#FFFFFF" font-size="14" font-weight="700">
+        Team Falcon — Competitive Hackathon Bangalore (Oct 2026)
+      </text>
+      <text x="24" y="32" fill="#E5B5C7" font-size="12">
+        Represented collegiate engineering team tackling high-stakes computational and autonomous systems challenges.
+      </text>
+    </g>
+
+    <!-- Milestone 3: Presentation -->
+    <g transform="translate(0, 104)">
+      <circle cx="8" cy="10" r="5" fill="#451126" stroke="#C77B9B" stroke-width="1.5" />
+      <circle cx="8" cy="10" r="2.5" fill="#E5B5C7" />
+      <text x="24" y="14" fill="#FFFFFF" font-size="14" font-weight="700">
+        Technical Paper Presentation: Neuralink &amp; Brain-Computer Interfaces (Jan 2025)
+      </text>
+      <text x="24" y="32" fill="#E5B5C7" font-size="12">
+        Delivered comprehensive architectural presentation on neural telemetry arrays and BCI hardware integration.
+      </text>
+    </g>
+  </g>
+</svg>
