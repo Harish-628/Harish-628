@@ -62,11 +62,9 @@
 <br/>
 
 <div align="center">
-  <!-- 06 GitHub Genuine Contribution Heatmap -->
-  <img src="assets/card-contributions.svg" alt="GitHub Contribution Matrix" width="100%" />
-  <br/><br/>
+  <!-- 05 Repository Telemetry & Contribution Stream -->
   <a href="https://github.com/Harish-628">
-    <img src="https://ghchart.rshah.org/FF1A66/Harish-628" alt="Harish's GitHub Contribution Heatmap" width="100%" />
+    <img src="assets/card-activity.svg" alt="Harish — Continuous Shipping &amp; Code Frequency Telemetry Matrix" width="100%" />
   </a>
 </div>
 
