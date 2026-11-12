@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 240" width="100%" height="auto" style="border-radius: 16px; overflow: hidden; background: #0A0207; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="n_bg_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D0B1F" />
+      <stop offset="50%" stop-color="#14030D" />
+      <stop offset="100%" stop-color="#3A0822" />
+    </linearGradient>
+
+    <radialGradient id="n_right_glow" cx="88%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#991B48" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="#550A26" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#14030D" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="n_border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5A3BC" stop-opacity="0.75" />
+      <stop offset="30%" stop-color="#991B48" stop-opacity="0.5" />
+      <stop offset="70%" stop-color="#3D061C" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#D97298" stop-opacity="0.65" />
+    </linearGradient>
+
+    <linearGradient id="n_sheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="n_bloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Base Shell -->
+  <rect width="940" height="240" fill="url(#n_bg_grad)" />
+  <rect width="940" height="240" fill="url(#n_right_glow)" />
+  <rect width="940" height="50" fill="url(#n_sheen)" />
+  <rect x="2" y="2" width="936" height="236" rx="15" fill="none" stroke="url(#n_border)" stroke-width="1.6" />
+
+  <!-- Left Content Column -->
+  <g transform="translate(42, 32)">
+    <text x="0" y="0" fill="#D97298" font-size="10.5" font-weight="700" letter-spacing="1.5" font-family="'Courier New', Courier, monospace">
+      03 • MULTI-AGENT • LLM • CAMPUS OS • 2026
+    </text>
+
+    <text x="0" y="34" fill="#FFFFFF" font-size="28" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-weight="700" letter-spacing="-0.3">
+      NeuralKPI <tspan fill="#E5A3BC" font-size="16" font-family="-apple-system, sans-serif" font-weight="400">// AI-Native Campus OS</tspan>
+    </text>
+
+    <text x="0" y="58" fill="#F8EAF0" font-size="12.5" font-weight="400" fill-opacity="0.9">
+      AI-native college ERP system integrating autonomous agent swarms and voice-to-UI sync.
+    </text>
+
+    <text x="0" y="78" fill="#D97298" font-size="11" font-weight="600" font-family="'Courier New', Courier, monospace">
+      BUILT • LangGraph multi-agent pipelines + Gemini hybrid routing for institutional queries
+    </text>
+
+    <!-- 3 Key Metric Stats Columns -->
+    <g transform="translate(0, 114)">
+      <g transform="translate(0, 0)">
+        <text x="0" y="0" fill="#FFFFFF" font-size="20" font-weight="800">Multi-Agent</text>
+        <text x="0" y="16" fill="#D97298" font-size="10.5" font-weight="500">autonomous agent swarms</text>
+      </g>
+
+      <g transform="translate(160, 0)">
+        <text x="0" y="0" fill="#FFFFFF" font-size="20" font-weight="800">Voice-to-UI</text>
+        <text x="0" y="16" fill="#D97298" font-size="10.5" font-weight="500">real-time sync pipelines</text>
+      </g>
+
+      <g transform="translate(320, 0)">
+        <text x="0" y="0" fill="#FFFFFF" font-size="20" font-weight="800">Zero</text>
+        <text x="0" y="16" fill="#D97298" font-size="10.5" font-weight="500">manual routing delay</text>
+      </g>
+    </g>
+
+    <!-- Technology Pills Row -->
+    <g transform="translate(0, 154)">
+      <rect x="0" y="0" width="85" height="24" rx="12" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+      <text x="42.5" y="15.5" fill="#E5A3BC" font-size="10.5" font-weight="600" text-anchor="middle">LangGraph</text>
+
+      <rect x="93" y="0" width="85" height="24" rx="12" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+      <text x="135.5" y="15.5" fill="#E5A3BC" font-size="10.5" font-weight="600" text-anchor="middle">Gemini API</text>
+
+      <rect x="186" y="0" width="70" height="24" rx="12" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+      <text x="221" y="15.5" fill="#E5A3BC" font-size="10.5" font-weight="600" text-anchor="middle">FastAPI</text>
+
+      <rect x="264" y="0" width="65" height="24" rx="12" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+      <text x="296.5" y="15.5" fill="#E5A3BC" font-size="10.5" font-weight="600" text-anchor="middle">Python</text>
+
+      <rect x="337" y="0" width="85" height="24" rx="12" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+      <text x="379.5" y="15.5" fill="#E5A3BC" font-size="10.5" font-weight="600" text-anchor="middle">Multi-Agent</text>
+    </g>
+  </g>
+
+  <!-- Right Graphic Column (Swarm Node Network) -->
+  <g transform="translate(760, 120)">
+    <!-- Center Router Node -->
+    <circle cx="0" cy="0" r="14" fill="#3D0B24" stroke="#FF2A6D" stroke-width="1.8" filter="url(#n_bloom)" />
+    <circle cx="0" cy="0" r="4" fill="#FFFFFF" />
+
+    <!-- 4 Satellite Agent Nodes -->
+    <g transform="translate(-45, -35)">
+      <circle cx="0" cy="0" r="8" fill="#14020C" stroke="#D97298" stroke-width="1.2" />
+      <line x1="0" y1="0" x2="45" y2="35" stroke="#991B48" stroke-width="1.2" stroke-dasharray="3 3" />
+    </g>
+    <g transform="translate(45, -35)">
+      <circle cx="0" cy="0" r="8" fill="#14020C" stroke="#D97298" stroke-width="1.2" />
+      <line x1="0" y1="0" x2="-45" y2="35" stroke="#991B48" stroke-width="1.2" stroke-dasharray="3 3" />
+    </g>
+    <g transform="translate(-50, 30)">
+      <circle cx="0" cy="0" r="8" fill="#14020C" stroke="#D97298" stroke-width="1.2" />
+      <line x1="0" y1="0" x2="50" y2="-30" stroke="#991B48" stroke-width="1.2" stroke-dasharray="3 3" />
+    </g>
+    <g transform="translate(50, 30)">
+      <circle cx="0" cy="0" r="8" fill="#14020C" stroke="#D97298" stroke-width="1.2" />
+      <line x1="0" y1="0" x2="-50" y2="-30" stroke="#991B48" stroke-width="1.2" stroke-dasharray="3 3" />
+    </g>
+
+    <text x="0" y="55" fill="#D97298" font-size="9.5" font-family="'Courier New', monospace" text-anchor="middle">AGENT SWARM // ACTIVE</text>
+  </g>
+</svg>

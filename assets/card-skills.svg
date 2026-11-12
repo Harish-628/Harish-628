@@ -1,195 +1,131 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 326" width="100%" height="auto" style="border-radius: 14px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Ubuntu', sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 280" width="100%" height="auto" style="border-radius: 16px; overflow: hidden; background: #0A0207; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
   <defs>
-    <linearGradient id="csk_bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#240718" stop-opacity="0.96" />
-      <stop offset="50%" stop-color="#0E020A" stop-opacity="0.99" />
-      <stop offset="100%" stop-color="#1C0513" stop-opacity="0.96" />
+    <linearGradient id="sk_sri_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D0B1F" />
+      <stop offset="50%" stop-color="#14030D" />
+      <stop offset="100%" stop-color="#220616" />
     </linearGradient>
 
-    <linearGradient id="csk_border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FF70A6" stop-opacity="0.9" />
-      <stop offset="30%" stop-color="#FF1A66" stop-opacity="0.7" />
-      <stop offset="70%" stop-color="#660A2B" stop-opacity="0.5" />
-      <stop offset="100%" stop-color="#FFA8C5" stop-opacity="0.8" />
+    <linearGradient id="sk_sri_border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5A3BC" stop-opacity="0.75" />
+      <stop offset="40%" stop-color="#991B48" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#D97298" stop-opacity="0.6" />
     </linearGradient>
 
-    <linearGradient id="csk_sheen" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.16" />
+    <linearGradient id="sk_sri_sheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.1" />
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
     </linearGradient>
-
-    <radialGradient id="csk_glow" cx="90%" cy="15%" r="60%">
-      <stop offset="0%" stop-color="#FF1A66" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#080205" stop-opacity="0" />
-    </radialGradient>
-
-    <filter id="csk_shadow" x="-5%" y="-5%" width="110%" height="115%">
-      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.65" />
-    </filter>
-
-    <filter id="csk_bloom" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2.5" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
   </defs>
 
-  <!-- 3D Glass Surface -->
-  <g filter="url(#csk_shadow)">
-    <rect x="2" y="2" width="936" height="320" rx="14" fill="url(#csk_bg)" />
-    <rect x="2" y="2" width="936" height="320" fill="url(#csk_glow)" />
-    <rect x="2" y="2" width="936" height="50" rx="14" fill="url(#csk_sheen)" />
-    <rect x="2" y="2" width="936" height="320" rx="14" fill="none" stroke="url(#csk_border)" stroke-width="1.6" />
-  </g>
+  <rect width="940" height="280" fill="url(#sk_sri_bg)" />
+  <rect width="940" height="40" fill="url(#sk_sri_sheen)" />
+  <rect x="2" y="2" width="936" height="276" rx="15" fill="none" stroke="url(#sk_sri_border)" stroke-width="1.6" />
 
-  <!-- Header -->
-  <g transform="translate(32, 34)">
-    <rect x="0" y="0" width="10" height="22" rx="3" fill="#FF1A66" filter="url(#csk_bloom)">
-      <animate attributeName="fill-opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite" />
-    </rect>
-    <text x="20" y="16" fill="#FFFFFF" font-size="16" font-weight="800" letter-spacing="1">
-      04 // TECHNICAL ARSENAL &amp; MATRIX
+  <g transform="translate(42, 32)">
+    <text x="0" y="0" fill="#D97298" font-size="10.5" font-weight="700" letter-spacing="1.5" font-family="'Courier New', Courier, monospace">
+      04 // TECHNICAL ARSENAL
     </text>
-    <line x1="0" y1="28" x2="876" y2="28" stroke="#400015" stroke-width="1.2" stroke-dasharray="6 4" />
-  </g>
 
-  <!-- Row 1: Languages -->
-  <g transform="translate(32, 78)">
-    <rect x="0" y="0" width="165" height="32" rx="6" fill="#14020C" stroke="#FF1A66" stroke-width="1" />
-    <text x="14" y="21" fill="#FFA8C5" font-size="12" font-weight="700">Languages</text>
+    <!-- Row 1: Languages -->
+    <g transform="translate(0, 24)">
+      <text x="0" y="18" fill="#FFFFFF" font-size="12" font-weight="700">Languages</text>
+      <g transform="translate(170, 0)">
+        <rect x="0" y="0" width="75" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="37.5" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">Python</text>
 
-    <!-- Pills with distinct offsets -->
-    <g transform="translate(180, 0)">
-      <g transform="translate(0, 0)">
-        <rect width="75" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="37.5" y="20.5" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle">Python</text>
-      </g>
-      <g transform="translate(85, 0)">
-        <rect width="65" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="32.5" y="20.5" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle">C++</text>
-      </g>
-      <g transform="translate(160, 0)">
-        <rect width="65" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="32.5" y="20.5" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle">SQL</text>
-      </g>
-      <g transform="translate(235, 0)">
-        <rect width="68" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="34" y="20.5" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle">Bash</text>
+        <rect x="83" y="0" width="65" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="115.5" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">C++</text>
+
+        <rect x="156" y="0" width="65" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="188.5" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">SQL</text>
+
+        <rect x="229" y="0" width="65" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="261.5" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">Bash</text>
       </g>
     </g>
-  </g>
 
-  <!-- Row 2: AI & ML -->
-  <g transform="translate(32, 122)">
-    <rect x="0" y="0" width="165" height="32" rx="6" fill="#14020C" stroke="#FF1A66" stroke-width="1" />
-    <text x="14" y="21" fill="#FFA8C5" font-size="12" font-weight="700">AI &amp; Machine Learning</text>
+    <!-- Row 2: AI & ML -->
+    <g transform="translate(0, 68)">
+      <text x="0" y="18" fill="#FFFFFF" font-size="12" font-weight="700">AI &amp; Deep Learning</text>
+      <g transform="translate(170, 0)">
+        <rect x="0" y="0" width="90" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="45" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">LangGraph</text>
 
-    <g transform="translate(180, 0)">
-      <g transform="translate(0, 0)">
-        <rect width="90" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="45" y="20.5" fill="#FFFFFF" font-size="11.5" font-weight="600" text-anchor="middle">LangGraph</text>
-      </g>
-      <g transform="translate(98, 0)">
-        <rect width="90" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="45" y="20.5" fill="#FFFFFF" font-size="11.5" font-weight="600" text-anchor="middle">LangChain</text>
-      </g>
-      <g transform="translate(196, 0)">
-        <rect width="96" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="48" y="20.5" fill="#FFFFFF" font-size="11.5" font-weight="600" text-anchor="middle">TensorFlow</text>
-      </g>
-      <g transform="translate(300, 0)">
-        <rect width="72" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="36" y="20.5" fill="#FFFFFF" font-size="11.5" font-weight="600" text-anchor="middle">YOLOv8</text>
-      </g>
-      <g transform="translate(380, 0)">
-        <rect width="74" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="37" y="20.5" fill="#FFFFFF" font-size="11.5" font-weight="600" text-anchor="middle">YAMNet</text>
-      </g>
-      <g transform="translate(462, 0)">
-        <rect width="72" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="36" y="20.5" fill="#FFFFFF" font-size="11.5" font-weight="600" text-anchor="middle">OpenCV</text>
-      </g>
-      <g transform="translate(542, 0)">
-        <rect width="84" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="42" y="20.5" fill="#FFFFFF" font-size="11.5" font-weight="600" text-anchor="middle">MediaPipe</text>
+        <rect x="98" y="0" width="90" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="143" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">LangChain</text>
+
+        <rect x="196" y="0" width="95" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="243.5" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">TensorFlow</text>
+
+        <rect x="299" y="0" width="70" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="334" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">YOLOv8</text>
+
+        <rect x="377" y="0" width="75" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="414.5" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">YAMNet</text>
+
+        <rect x="460" y="0" width="70" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="495" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">OpenCV</text>
+
+        <rect x="538" y="0" width="85" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="580.5" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">MediaPipe</text>
       </g>
     </g>
-  </g>
 
-  <!-- Row 3: Backend & Web -->
-  <g transform="translate(32, 166)">
-    <rect x="0" y="0" width="165" height="32" rx="6" fill="#14020C" stroke="#FF1A66" stroke-width="1" />
-    <text x="14" y="21" fill="#FFA8C5" font-size="12" font-weight="700">Backend &amp; Services</text>
+    <!-- Row 3: Backend & Web -->
+    <g transform="translate(0, 112)">
+      <text x="0" y="18" fill="#FFFFFF" font-size="12" font-weight="700">Backend &amp; Services</text>
+      <g transform="translate(170, 0)">
+        <rect x="0" y="0" width="80" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="40" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">FastAPI</text>
 
-    <g transform="translate(180, 0)">
-      <g transform="translate(0, 0)">
-        <rect width="78" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="39" y="20.5" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle">FastAPI</text>
-      </g>
-      <g transform="translate(86, 0)">
-        <rect width="84" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="42" y="20.5" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle">Streamlit</text>
-      </g>
-      <g transform="translate(178, 0)">
-        <rect width="115" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="57.5" y="20.5" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle">RESTful APIs</text>
-      </g>
-      <g transform="translate(301, 0)">
-        <rect width="145" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="72.5" y="20.5" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle">Asynchronous I/O</text>
+        <rect x="88" y="0" width="85" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="130.5" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">Streamlit</text>
+
+        <rect x="181" y="0" width="115" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="238.5" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">RESTful APIs</text>
+
+        <rect x="304" y="0" width="140" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="374" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">Asynchronous I/O</text>
       </g>
     </g>
-  </g>
 
-  <!-- Row 4: DevOps & Systems -->
-  <g transform="translate(32, 210)">
-    <rect x="0" y="0" width="165" height="32" rx="6" fill="#14020C" stroke="#FF1A66" stroke-width="1" />
-    <text x="14" y="21" fill="#FFA8C5" font-size="12" font-weight="700">DevOps &amp; Linux</text>
+    <!-- Row 4: DevOps & Linux -->
+    <g transform="translate(0, 156)">
+      <text x="0" y="18" fill="#FFFFFF" font-size="12" font-weight="700">DevOps &amp; Linux</text>
+      <g transform="translate(170, 0)">
+        <rect x="0" y="0" width="75" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="37.5" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">Docker</text>
 
-    <g transform="translate(180, 0)">
-      <g transform="translate(0, 0)">
-        <rect width="75" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="37.5" y="20.5" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle">Docker</text>
-      </g>
-      <g transform="translate(83, 0)">
-        <rect width="102" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="51" y="20.5" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle">Kubernetes</text>
-      </g>
-      <g transform="translate(193, 0)">
-        <rect width="98" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="49" y="20.5" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle">Arch Linux</text>
-      </g>
-      <g transform="translate(299, 0)">
-        <rect width="85" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="42.5" y="20.5" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle">Xubuntu</text>
-      </g>
-      <g transform="translate(392, 0)">
-        <rect width="75" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="37.5" y="20.5" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle">GitOps</text>
+        <rect x="83" y="0" width="100" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="133" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">Kubernetes</text>
+
+        <rect x="191" y="0" width="95" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="238.5" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">Arch Linux</text>
+
+        <rect x="294" y="0" width="85" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="336.5" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">Xubuntu</text>
+
+        <rect x="387" y="0" width="75" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="424.5" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">GitOps</text>
       </g>
     </g>
-  </g>
 
-  <!-- Row 5: Hardware & Edge -->
-  <g transform="translate(32, 254)">
-    <rect x="0" y="0" width="165" height="32" rx="6" fill="#14020C" stroke="#FF1A66" stroke-width="1" />
-    <text x="14" y="21" fill="#FFA8C5" font-size="12" font-weight="700">Hardware &amp; Edge</text>
+    <!-- Row 5: Hardware & Edge -->
+    <g transform="translate(0, 200)">
+      <text x="0" y="18" fill="#FFFFFF" font-size="12" font-weight="700">Hardware &amp; Edge</text>
+      <g transform="translate(170, 0)">
+        <rect x="0" y="0" width="88" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="44" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">ESP32-S3</text>
 
-    <g transform="translate(180, 0)">
-      <g transform="translate(0, 0)">
-        <rect width="90" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="45" y="20.5" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle">ESP32-S3</text>
-      </g>
-      <g transform="translate(98, 0)">
-        <rect width="130" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="65" y="20.5" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle">60GHz mmWave</text>
-      </g>
-      <g transform="translate(236, 0)">
-        <rect width="145" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="72.5" y="20.5" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle">UWB Mesh Arrays</text>
-      </g>
-      <g transform="translate(389, 0)">
-        <rect width="140" height="32" rx="6" fill="#240718" stroke="#660A2B" stroke-width="1" />
-        <text x="70" y="20.5" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle">Wavelet Decomp</text>
+        <rect x="96" y="0" width="130" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="161" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">60GHz mmWave</text>
+
+        <rect x="234" y="0" width="145" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="306.5" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">UWB Mesh Relay</text>
+
+        <rect x="387" y="0" width="135" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+        <text x="454.5" y="17" fill="#E5A3BC" font-size="11" font-weight="600" text-anchor="middle">Wavelet Decomp</text>
       </g>
     </g>
   </g>

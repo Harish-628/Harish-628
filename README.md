@@ -6,58 +6,49 @@
 <br/>
 
 <div align="center">
-  <!-- HUD Status Bar -->
-  <img src="assets/badges.svg" alt="Core Competencies & Stack" width="100%" />
+  <!-- Hero Link Pills -->
+  <img src="assets/hero-links.svg" alt="Harish's Telemetry & Profiles" width="100%" />
 </div>
 
 <br/>
 
 <div align="center">
-  <!-- Direct Contact Bar -->
-  <a href="https://github.com/Harish-628">
-    <img src="https://img.shields.io/badge/GitHub-@Harish--628-14020C?style=for-the-badge&logo=github&logoColor=FF70A6&labelColor=080205" alt="GitHub" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://linkedin.com">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-330011?style=for-the-badge&logo=linkedin&logoColor=FFA8C5&labelColor=080205" alt="LinkedIn" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="mailto:harishsenthilraja628@gmail.com">
-    <img src="https://img.shields.io/badge/Direct_Email-harishsenthilraja628@gmail.com-660022?style=for-the-badge&logo=gmail&logoColor=FFFFFF&labelColor=080205" alt="Email" />
+  <!-- 01 About Card -->
+  <img src="assets/card-about.svg" alt="About Harish Senthilraja" width="100%" />
+</div>
+
+<br/>
+
+<div align="center">
+  <!-- 02 Selected Work: PRISM -->
+  <a href="https://github.com/Harish-628/PRISM">
+    <img src="assets/project-prism.svg" alt="PRISM Project — Click to view repository" width="100%" />
   </a>
 </div>
 
 <br/>
 
 <div align="center">
-  <!-- 01 Executive Overview Card -->
-  <img src="assets/card-overview.svg" alt="Executive Overview & Philosophy" width="100%" />
+  <!-- 02 Selected Work: Echo Sight -->
+  <a href="https://github.com/Harish-628/Echo-Sight">
+    <img src="assets/project-echosight.svg" alt="Echo Sight Project — Click to view repository" width="100%" />
+  </a>
 </div>
 
 <br/>
 
 <div align="center">
-  <!-- 02 Industry Experience Card -->
+  <!-- 02 Selected Work: NeuralKPI -->
+  <a href="https://github.com/Harish-628/NeuralKPI">
+    <img src="assets/project-neuralkpi.svg" alt="NeuralKPI Project — Click to view repository" width="100%" />
+  </a>
+</div>
+
+<br/>
+
+<div align="center">
+  <!-- 03 Experience Card -->
   <img src="assets/card-experience.svg" alt="Professional Experience at DigiDARA Technologies" width="100%" />
-</div>
-
-<br/>
-
-<div align="center">
-  <!-- 03 Featured Engineering Projects Card -->
-  <img src="assets/card-projects.svg" alt="Featured Engineering Projects" width="100%" />
-</div>
-
-<div align="center">
-  <p>
-    <a href="https://github.com/Harish-628/PRISM"><b>[ 🚨 PRISM Core ]</b></a>
-    &nbsp;&nbsp;•&nbsp;&nbsp;
-    <a href="https://github.com/Harish-628/Echo-Sight"><b>[ 👁️ Echo Sight ]</b></a>
-    &nbsp;&nbsp;•&nbsp;&nbsp;
-    <a href="https://github.com/Harish-628/NeuralKPI"><b>[ 🧠 NeuralKPI ]</b></a>
-    &nbsp;&nbsp;•&nbsp;&nbsp;
-    <a href="https://github.com/Harish-628/Bharat-AI-Assistant"><b>[ 📱 Bharat AI ]</b></a>
-  </p>
 </div>
 
 <br/>

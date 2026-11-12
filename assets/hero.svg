@@ -1,185 +1,150 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 330" width="100%" height="auto" style="border-radius: 16px; overflow: hidden; background: #080205; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Ubuntu', 'SF Pro Display', sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 360" width="100%" height="auto" style="border-radius: 18px; overflow: hidden; background: #0A0207; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="h_bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1A0412" />
-      <stop offset="35%" stop-color="#080205" />
-      <stop offset="70%" stop-color="#11030D" />
-      <stop offset="100%" stop-color="#220518" />
+    <!-- Sri Tech Burgundy Gradient -->
+    <linearGradient id="sri_hero_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#340B21" />
+      <stop offset="40%" stop-color="#190410" />
+      <stop offset="80%" stop-color="#0E0209" />
+      <stop offset="100%" stop-color="#220616" />
     </linearGradient>
 
-    <!-- Glowing Ruby Radial Overlays -->
-    <radialGradient id="h_glow_right" cx="85%" cy="35%" r="65%">
-      <stop offset="0%" stop-color="#FF1A66" stop-opacity="0.45" />
-      <stop offset="40%" stop-color="#990033" stop-opacity="0.22" />
-      <stop offset="100%" stop-color="#080205" stop-opacity="0" />
+    <!-- Glowing Wine Radial -->
+    <radialGradient id="sri_glow" cx="80%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#991B48" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#550A26" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#0A0207" stop-opacity="0" />
     </radialGradient>
 
-    <radialGradient id="h_glow_left" cx="12%" cy="80%" r="55%">
-      <stop offset="0%" stop-color="#80002A" stop-opacity="0.35" />
-      <stop offset="100%" stop-color="#080205" stop-opacity="0" />
-    </radialGradient>
-
-    <!-- Name Shimmer -->
-    <linearGradient id="h_name_grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="45%" stop-color="#FFFFFF" />
-      <stop offset="75%" stop-color="#FFA8C5" />
-      <stop offset="100%" stop-color="#FF2A6D" />
+    <!-- Bevel Border Gradient -->
+    <linearGradient id="sri_border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5A3BC" stop-opacity="0.7" />
+      <stop offset="30%" stop-color="#991B48" stop-opacity="0.5" />
+      <stop offset="70%" stop-color="#3D061C" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#D97298" stop-opacity="0.6" />
     </linearGradient>
 
-    <!-- Moving Laser Gradient -->
-    <linearGradient id="h_laser" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FF1A66" stop-opacity="0" />
-      <stop offset="30%" stop-color="#FF1A66" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1" />
-      <stop offset="70%" stop-color="#FF70A6" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#FF1A66" stop-opacity="0" />
+    <!-- Top Glass Sheen -->
+    <linearGradient id="sri_sheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
     </linearGradient>
 
-    <!-- Cyber Grid -->
-    <pattern id="h_grid" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M 34 0 L 0 0 0 34" fill="none" stroke="#FF1A66" stroke-width="0.75" stroke-opacity="0.16" />
-      <circle cx="0" cy="0" r="1.3" fill="#FF70A6" fill-opacity="0.35" />
-    </pattern>
-
-    <!-- Bloom Filter -->
-    <filter id="h_bloom" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3.5" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-
-    <filter id="h_soft_glow" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="1.5" result="blur" />
+    <filter id="sri_bloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
-  <!-- Layers -->
-  <rect width="940" height="330" fill="url(#h_bg)" />
-  <rect width="940" height="330" fill="url(#h_glow_right)" />
-  <rect width="940" height="330" fill="url(#h_glow_left)" />
-  <rect width="940" height="330" fill="url(#h_grid)" opacity="0.9" />
+  <!-- Base Card -->
+  <rect width="940" height="360" fill="url(#sri_hero_bg)" />
+  <rect width="940" height="360" fill="url(#sri_glow)" />
+  <rect width="940" height="70" fill="url(#sri_sheen)" />
+  <rect x="2" y="2" width="936" height="356" rx="17" fill="none" stroke="url(#sri_border)" stroke-width="1.6" />
 
-  <!-- 3D Metallic Glass Outer Frame -->
-  <rect x="2" y="2" width="936" height="326" rx="15" fill="none" stroke="#660A2B" stroke-width="2" />
-  <rect x="7" y="7" width="926" height="316" rx="11" fill="none" stroke="#FF1A66" stroke-width="0.8" stroke-dasharray="10 8" stroke-opacity="0.45" />
+  <!-- Fine Background Grid -->
+  <g opacity="0.12" stroke="#FF70A6" stroke-width="0.7">
+    <line x1="50" y1="0" x2="50" y2="360" />
+    <line x1="200" y1="0" x2="200" y2="360" />
+    <line x1="350" y1="0" x2="350" y2="360" />
+    <line x1="500" y1="0" x2="500" y2="360" />
+    <line x1="650" y1="0" x2="650" y2="360" />
+    <line x1="0" y1="90" x2="940" y2="90" />
+    <line x1="0" y1="180" x2="940" y2="180" />
+    <line x1="0" y1="270" x2="940" y2="270" />
+  </g>
 
-  <!-- Corner Brackets -->
-  <path d="M 18 36 L 18 18 L 36 18" fill="none" stroke="#FF2A6D" stroke-width="2.5" />
-  <path d="M 922 36 L 922 18 L 904 18" fill="none" stroke="#FF2A6D" stroke-width="2.5" />
-  <path d="M 18 294 L 18 312 L 36 312" fill="none" stroke="#FF2A6D" stroke-width="2.5" />
-  <path d="M 922 294 L 922 312 L 904 312" fill="none" stroke="#FF2A6D" stroke-width="2.5" />
+  <!-- Top Prompt Pill: ~/harish > build intelligent -->
+  <g transform="translate(52, 42)">
+    <rect width="270" height="26" rx="13" fill="#14020C" stroke="#7A1238" stroke-width="1" />
+    <circle cx="14" cy="13" r="3.5" fill="#E5A3BC">
+      <animate attributeName="fill-opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="26" y="17" fill="#E5A3BC" font-size="11" font-family="'Courier New', Courier, monospace" font-weight="600" letter-spacing="0.5">
+      ~/harish &gt; build --intelligent
+    </text>
+  </g>
 
-  <!-- Holographic Orbital Radar Geometry (Right) -->
-  <g transform="translate(760, 165)" stroke="#FF2A6D" fill="none">
-    <!-- Outer dashed trajectory ring -->
-    <circle r="122" stroke-width="1.2" stroke-dasharray="16 12" stroke-opacity="0.35">
+  <!-- Tagline Sub-Header -->
+  <g transform="translate(52, 92)">
+    <text x="0" y="0" fill="#D97298" font-size="11" font-weight="700" letter-spacing="2" font-family="'Courier New', Courier, monospace">
+      AI • ENGINEERING • CREATIVE TECHNOLOGY
+    </text>
+  </g>
+
+  <!-- Giant Editorial Serif Name -->
+  <g transform="translate(52, 148)">
+    <text x="0" y="0" fill="#FFFFFF" font-size="48" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-weight="700" letter-spacing="-0.5">
+      Harish
+    </text>
+    <text x="0" y="52" fill="#FFFFFF" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-size="48" font-weight="700" letter-spacing="-0.5">
+      Senthilraja<tspan fill="#FF2A6D">.</tspan>
+    </text>
+  </g>
+
+  <!-- Role Subtitle -->
+  <g transform="translate(52, 238)">
+    <text x="0" y="0" fill="#E5A3BC" font-size="14" font-weight="700" letter-spacing="1.2">
+      AI/ML ENGINEER • BACKEND ARCHITECT • EDGE COMPUTING
+    </text>
+  </g>
+
+  <!-- Philosophy Line -->
+  <g transform="translate(52, 262)">
+    <text x="0" y="0" fill="#F8EAF0" font-size="13" font-weight="400" fill-opacity="0.88">
+      Engineering intelligence. Designing resilient edge systems.
+    </text>
+  </g>
+
+  <!-- Academic Footnote Line -->
+  <g transform="translate(52, 302)">
+    <line x1="0" y1="-14" x2="560" y2="-14" stroke="#4D0B26" stroke-width="1" />
+    <text x="0" y="0" fill="#D97298" font-size="10.5" font-family="'Courier New', Courier, monospace" letter-spacing="1">
+      B.TECH IN AI &amp; DS • KONGUNADU COLLEGE OF ENGINEERING AND TECHNOLOGY
+    </text>
+  </g>
+
+  <!-- Right Side: Circular Editorial Avatar/Emblem Frame with Orbital Arcs -->
+  <g transform="translate(760, 180)">
+    <!-- Outer delicate orbital arcs -->
+    <circle r="115" fill="none" stroke="#D97298" stroke-width="0.8" stroke-dasharray="14 10" stroke-opacity="0.35">
       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="40s" repeatCount="indefinite" />
     </circle>
+    
+    <circle r="92" fill="none" stroke="#FF2A6D" stroke-width="1.2" stroke-dasharray="8 6 22 6" stroke-opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="25s" repeatCount="indefinite" />
+    </circle>
 
-    <!-- Satellite orbital node -->
+    <!-- Portrait Halo Gradient -->
+    <radialGradient id="avatar_halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#991B48" stop-opacity="0.5" />
+      <stop offset="80%" stop-color="#2D061A" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#14020C" stop-opacity="1" />
+    </radialGradient>
+
+    <!-- Main Portrait Backing Circle -->
+    <circle r="72" fill="url(#avatar_halo)" stroke="#D97298" stroke-width="1.8" />
+
+    <!-- Spider-Man Spider Emblem / Cyber Symbol -->
+    <g transform="translate(0, -5) scale(0.65)" fill="#FFFFFF" opacity="0.95">
+      <!-- Center spider body -->
+      <ellipse cx="0" cy="8" rx="8" ry="16" />
+      <ellipse cx="0" cy="-10" rx="6" ry="6" />
+      <!-- Left legs -->
+      <path d="M -4 2 Q -25 -15 -42 -42 Q -38 -20 -10 -4 Z" />
+      <path d="M -6 6 Q -35 -2 -48 -18 Q -40 2 -10 10 Z" />
+      <path d="M -6 12 Q -38 25 -45 48 Q -35 28 -8 18 Z" />
+      <path d="M -4 16 Q -28 42 -32 68 Q -24 45 -6 22 Z" />
+      <!-- Right legs -->
+      <path d="M 4 2 Q 25 -15 42 -42 Q 38 -20 10 -4 Z" />
+      <path d="M 6 6 Q 35 -2 48 -18 Q 40 2 10 10 Z" />
+      <path d="M 6 12 Q 38 25 45 48 Q 35 28 8 18 Z" />
+      <path d="M 4 16 Q 28 42 32 68 Q 24 45 6 22 Z" />
+    </g>
+
+    <!-- Tiny Glowing Orbital Beacon -->
     <g>
       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="40s" repeatCount="indefinite" />
-      <circle cx="122" cy="0" r="5" fill="#FFFFFF" filter="url(#h_bloom)" />
-      <circle cx="122" cy="0" r="10" stroke="#FF1A66" stroke-width="1" stroke-opacity="0.7" />
-    </g>
-
-    <!-- Mid counter-rotating telemetry ring -->
-    <circle r="86" stroke-width="1.6" stroke-dasharray="8 6 24 6" stroke-opacity="0.6" stroke="#FFA8C5">
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="24s" repeatCount="indefinite" />
-    </circle>
-
-    <!-- Inner breathing target ring -->
-    <circle r="52" stroke-width="2" stroke-opacity="0.8" stroke="#FFFFFF">
-      <animate attributeName="r" values="48;56;48" dur="3.5s" repeatCount="indefinite" />
-      <animate attributeName="stroke-opacity" values="0.4;0.9;0.4" dur="3.5s" repeatCount="indefinite" />
-    </circle>
-
-    <!-- Center Pulse Beacon -->
-    <circle r="9" fill="#FF1A66" filter="url(#h_bloom)">
-      <animate attributeName="fill-opacity" values="0.7;1;0.7" dur="1.8s" repeatCount="indefinite" />
-      <animate attributeName="r" values="8;12;8" dur="1.8s" repeatCount="indefinite" />
-    </circle>
-    <circle r="4" fill="#FFFFFF" />
-
-    <!-- Crosshair axes -->
-    <line x1="-140" y1="0" x2="140" y2="0" stroke="#FF1A66" stroke-width="0.8" stroke-opacity="0.45" />
-    <line x1="0" y1="-140" x2="0" y2="140" stroke="#FF1A66" stroke-width="0.8" stroke-opacity="0.45" />
-  </g>
-
-  <!-- Animated PRISM mmWave Signal Waveform (Bottom) -->
-  <g transform="translate(0, 300)" opacity="0.8">
-    <path d="M 0 0 L 140 0 L 160 -18 L 175 20 L 190 -28 L 205 34 L 220 -42 L 235 28 L 250 -14 L 270 0 L 480 0 L 500 -14 L 515 16 L 530 -18 L 545 12 L 560 0 L 940 0" fill="none" stroke="#80002A" stroke-width="1.5" />
-    <path d="M 0 0 L 140 0 L 160 -18 L 175 20 L 190 -28 L 205 34 L 220 -42 L 235 28 L 250 -14 L 270 0 L 480 0 L 500 -14 L 515 16 L 530 -18 L 545 12 L 560 0 L 940 0" fill="none" stroke="#FFFFFF" stroke-width="2.2" filter="url(#h_bloom)" stroke-dasharray="140 800">
-      <animate attributeName="stroke-dashoffset" values="940; -940" dur="3.5s" repeatCount="indefinite" />
-    </path>
-  </g>
-
-  <!-- Top Status Pill -->
-  <g transform="translate(48, 40)">
-    <rect x="0" y="0" width="320" height="28" rx="14" fill="#15030E" stroke="#FF1A66" stroke-width="1.2" />
-    <circle cx="15" cy="14" r="4.5" fill="#FF1A66" filter="url(#h_soft_glow)">
-      <animate attributeName="fill-opacity" values="0.3;1;0.3" dur="1.6s" repeatCount="indefinite" />
-      <animate attributeName="r" values="3.5;5.5;3.5" dur="1.6s" repeatCount="indefinite" />
-    </circle>
-    <text x="28" y="18" fill="#FFFFFF" font-size="11.5" font-weight="700" letter-spacing="1.5" font-family="'Courier New', Courier, monospace">SYSTEM: ONLINE // KONGUNADU '28</text>
-  </g>
-
-  <!-- Big Bold Cinematic Name -->
-  <g transform="translate(48, 128)">
-    <text x="0" y="0" fill="url(#h_name_grad)" font-size="50" font-weight="900" letter-spacing="0.5" filter="url(#h_soft_glow)">
-      HARISH SENTHILRAJA
-    </text>
-  </g>
-
-  <!-- Subtitle -->
-  <g transform="translate(48, 166)">
-    <text x="0" y="0" fill="#FF70A6" font-size="21" font-weight="700" letter-spacing="0.8">
-      AI &amp; Backend Software Engineer
-    </text>
-  </g>
-
-  <!-- Positioning Descriptor -->
-  <g transform="translate(48, 196)">
-    <text x="0" y="0" fill="#FCEEF4" font-size="13.5" font-weight="400" fill-opacity="0.92" letter-spacing="0.3">
-      Edge Computing <tspan fill="#FF1A66">•</tspan> Multi-Agent AI Ecosystems <tspan fill="#FF1A66">•</tspan> High-Throughput Linux Backends
-    </text>
-  </g>
-
-  <!-- Sweeper Laser Line -->
-  <g transform="translate(48, 218)">
-    <line x1="0" y1="0" x2="640" y2="0" stroke="#400015" stroke-width="2" />
-    <line x1="0" y1="0" x2="260" y2="0" stroke="url(#h_laser)" stroke-width="3.5" filter="url(#h_bloom)">
-      <animate attributeName="x1" values="0;400;0" dur="4.5s" repeatCount="indefinite" />
-      <animate attributeName="x2" values="260;660;260" dur="4.5s" repeatCount="indefinite" />
-    </line>
-  </g>
-
-  <!-- Glowing 3D Pills -->
-  <g transform="translate(48, 244)">
-    <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="138" height="32" rx="7" fill="#14020C" stroke="#FF1A66" stroke-width="1.2" />
-      <circle cx="15" cy="16" r="3.5" fill="#FF2A6D" />
-      <text x="26" y="20" fill="#FFFFFF" font-size="12" font-weight="600">ESP32-S3 / Edge</text>
-    </g>
-
-    <g transform="translate(150, 0)">
-      <rect x="0" y="0" width="170" height="32" rx="7" fill="#14020C" stroke="#FF1A66" stroke-width="1.2" />
-      <circle cx="15" cy="16" r="3.5" fill="#FFA8C5" />
-      <text x="26" y="20" fill="#FFFFFF" font-size="12" font-weight="600">LangGraph / Multi-Agent</text>
-    </g>
-
-    <g transform="translate(332, 0)">
-      <rect x="0" y="0" width="150" height="32" rx="7" fill="#14020C" stroke="#FF1A66" stroke-width="1.2" />
-      <circle cx="15" cy="16" r="3.5" fill="#FF2A6D" />
-      <text x="26" y="20" fill="#FFFFFF" font-size="12" font-weight="600">FastAPI &amp; Container</text>
-    </g>
-
-    <g transform="translate(494, 0)">
-      <rect x="0" y="0" width="144" height="32" rx="7" fill="#14020C" stroke="#FF1A66" stroke-width="1.2" />
-      <circle cx="15" cy="16" r="3.5" fill="#FFA8C5" />
-      <text x="26" y="20" fill="#FFFFFF" font-size="12" font-weight="600">Arch / Terminal-First</text>
+      <circle cx="115" cy="0" r="4.5" fill="#FF70A6" filter="url(#sri_bloom)" />
     </g>
   </g>
 </svg>
