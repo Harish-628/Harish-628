@@ -5,24 +5,30 @@
 <br/>
 
 <div align="center">
+  <img src="assets/badges.svg" alt="Core Competencies & Stack" width="100%" />
+</div>
+
+<br/>
+
+<div align="center">
   <a href="https://github.com/Harish-628">
-    <img src="https://img.shields.io/badge/GitHub-Harish--628-190B12?style=flat-square&logo=github&logoColor=E5B5C7&labelColor=10070C" alt="GitHub Profile" />
+    <img src="https://img.shields.io/badge/GitHub-Harish--628-2A0D1E?style=flat&logo=github&logoColor=FCEEF4" alt="GitHub" />
   </a>
+  &nbsp;&nbsp;
   <a href="https://linkedin.com">
-    <img src="https://img.shields.io/badge/LinkedIn-Harish_Senthilraja-190B12?style=flat-square&logo=linkedin&logoColor=C77B9B&labelColor=10070C" alt="LinkedIn Profile" />
+    <img src="https://img.shields.io/badge/LinkedIn-Harish_Senthilraja-4A1229?style=flat&logo=linkedin&logoColor=FCEEF4" alt="LinkedIn" />
   </a>
+  &nbsp;&nbsp;
   <a href="mailto:harish@example.com">
-    <img src="https://img.shields.io/badge/Email-Get_In_Touch-190B12?style=flat-square&logo=maildotru&logoColor=E5B5C7&labelColor=10070C" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-Get_in_Touch-701A3D?style=flat&logo=maildotru&logoColor=FCEEF4" alt="Email" />
   </a>
-  <img src="https://img.shields.io/badge/Focus-Multi--Agent_AI_%26_Edge_Computing-190B12?style=flat-square&logo=probot&logoColor=C77B9B&labelColor=10070C" alt="Focus Area" />
-  <img src="https://img.shields.io/badge/OS-Arch_Linux_%7C_Xubuntu-190B12?style=flat-square&logo=archlinux&logoColor=E5B5C7&labelColor=10070C" alt="Arch Linux" />
 </div>
 
 <br/>
 
 ## ⟡ Executive Overview
 
-Third-year **Artificial Intelligence and Data Science** undergraduate at **Kongunadu College of Engineering and Technology**, dedicated to high-performance backend architecture, edge intelligence, and multi-agent AI ecosystems. 
+Third-year **Artificial Intelligence and Data Science** undergraduate at **Kongunadu College of Engineering and Technology**, dedicated to high-performance backend architecture, edge intelligence, and multi-agent AI ecosystems.
 
 - 🛰️ **Edge AI & Telemetry**: Experienced in running real-time signal processing and Wavelet Packet Decomposition on microcontrollers (ESP32-S3) interfaced with mmWave radar and geophone arrays.
 - 🤖 **Multi-Agent Systems**: Architecting dynamic task-routing backends and voice-to-UI synchronization using LangGraph, LangChain, and hybrid model orchestrations.
@@ -154,22 +160,6 @@ Third-year **Artificial Intelligence and Data Science** undergraduate at **Kongu
 </div>
 
 ---
-
-## 📬 Connect &amp; Collaborate
-
-<div align="center">
-  <a href="https://github.com/Harish-628">
-    <img src="https://img.shields.io/badge/GitHub-@Harish--628-190B12?style=for-the-badge&logo=github&logoColor=F8F0F3" alt="GitHub" />
-  </a>
-  &nbsp;
-  <a href="https://linkedin.com">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-451126?style=for-the-badge&logo=linkedin&logoColor=F8F0F3" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="mailto:harish@example.com">
-    <img src="https://img.shields.io/badge/Terminal_Email-Reach_Out-701A3D?style=for-the-badge&logo=gnu-bash&logoColor=F8F0F3" alt="Email" />
-  </a>
-</div>
 
 <br/>
 

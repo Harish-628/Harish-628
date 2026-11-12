@@ -1,166 +1,189 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" width="100%" height="100%" style="border-radius: 12px; overflow: hidden; background: #10070c; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Ubuntu', 'SF Pro Text', sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 350" width="100%" height="auto" style="border-radius: 14px; overflow: hidden; background: #0D050A; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Ubuntu', 'SF Pro Display', sans-serif;">
   <defs>
     <!-- Background Gradients -->
     <linearGradient id="hero_bg_grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#190B12" />
-      <stop offset="50%" stop-color="#10070C" />
-      <stop offset="100%" stop-color="#230917" />
+      <stop offset="0%" stop-color="#1A0A14" />
+      <stop offset="40%" stop-color="#0E050B" />
+      <stop offset="100%" stop-color="#260919" />
     </linearGradient>
 
-    <!-- Wine Glow Gradient -->
-    <radialGradient id="hero_radial_glow" cx="80%" cy="25%" r="65%">
-      <stop offset="0%" stop-color="#701A3D" stop-opacity="0.45" />
-      <stop offset="45%" stop-color="#451126" stop-opacity="0.20" />
-      <stop offset="100%" stop-color="#10070C" stop-opacity="0" />
+    <!-- Glowing Wine Radial -->
+    <radialGradient id="hero_radial_wine" cx="82%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#801D46" stop-opacity="0.55" />
+      <stop offset="45%" stop-color="#4A1229" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0E050B" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Title Gradient -->
-    <linearGradient id="hero_text_grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#F8F0F3" />
-      <stop offset="60%" stop-color="#E5B5C7" />
-      <stop offset="100%" stop-color="#C77B9B" />
+    <radialGradient id="hero_radial_left" cx="15%" cy="85%" r="50%">
+      <stop offset="0%" stop-color="#5C1433" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#0E050B" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Text Gradients -->
+    <linearGradient id="hero_name_grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#FCEEF4" />
+      <stop offset="100%" stop-color="#E5B5C7" />
     </linearGradient>
 
-    <!-- Accent Beam Gradient -->
-    <linearGradient id="hero_laser_grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#701A3D" stop-opacity="0" />
-      <stop offset="50%" stop-color="#E5B5C7" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#701A3D" stop-opacity="0" />
+    <!-- Sweeping Laser Beam -->
+    <linearGradient id="laser_beam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#451126" stop-opacity="0" />
+      <stop offset="40%" stop-color="#C77B9B" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1" />
+      <stop offset="60%" stop-color="#E5B5C7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#451126" stop-opacity="0" />
     </linearGradient>
 
     <!-- Grid Pattern -->
-    <pattern id="hero_grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#701A3D" stroke-width="0.75" stroke-opacity="0.22" />
-      <circle cx="0" cy="0" r="1" fill="#C77B9B" fill-opacity="0.3" />
+    <pattern id="tech_grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#701A3D" stroke-width="0.8" stroke-opacity="0.25" />
+      <circle cx="0" cy="0" r="1.2" fill="#E5B5C7" fill-opacity="0.35" />
     </pattern>
 
-    <!-- Glow Filter -->
-    <filter id="hero_glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3.5" result="blur" />
+    <!-- Filters -->
+    <filter id="bloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
-    <filter id="hero_soft_glow" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="2" result="blur" />
+    <filter id="soft_bloom" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
-  <!-- Base Background -->
-  <rect width="920" height="340" fill="url(#hero_bg_grad)" />
-  <rect width="920" height="340" fill="url(#hero_radial_glow)" />
+  <!-- Base Backdrops -->
+  <rect width="920" height="350" fill="url(#hero_bg_grad)" />
+  <rect width="920" height="350" fill="url(#hero_radial_wine)" />
+  <rect width="920" height="350" fill="url(#hero_radial_left)" />
+  <rect width="920" height="350" fill="url(#tech_grid)" opacity="0.9" />
 
-  <!-- Technical Grid Overlay -->
-  <rect width="920" height="340" fill="url(#hero_grid)" opacity="0.8" />
+  <!-- Borders -->
+  <rect x="1" y="1" width="918" height="348" rx="13" fill="none" stroke="#54152F" stroke-width="1.8" />
+  <rect x="7" y="7" width="906" height="336" rx="9" fill="none" stroke="#801D46" stroke-width="0.8" stroke-dasharray="8 6" stroke-opacity="0.45" />
 
-  <!-- Outer Frame Border -->
-  <rect x="1" y="1" width="918" height="338" rx="11" fill="none" stroke="#451126" stroke-width="1.5" stroke-opacity="0.85" />
-  <rect x="6" y="6" width="908" height="328" rx="7" fill="none" stroke="#701A3D" stroke-width="0.75" stroke-opacity="0.4" stroke-dasharray="8 6" />
+  <!-- Animated Waveform Trace (Radar / Geophone signal) -->
+  <g transform="translate(0, 320)" opacity="0.6">
+    <path d="M 0 0 L 120 0 L 140 -12 L 155 14 L 170 -18 L 185 22 L 200 -28 L 215 18 L 230 -10 L 250 0 L 450 0 L 470 -8 L 485 10 L 500 -12 L 515 8 L 530 0 L 920 0" fill="none" stroke="#C77B9B" stroke-width="1.2" stroke-opacity="0.4">
+      <animate attributeName="stroke-dasharray" values="0,1000; 1000,0" dur="8s" repeatCount="indefinite" />
+    </path>
+    <path d="M 0 0 L 120 0 L 140 -12 L 155 14 L 170 -18 L 185 22 L 200 -28 L 215 18 L 230 -10 L 250 0 L 450 0 L 470 -8 L 485 10 L 500 -12 L 515 8 L 530 0 L 920 0" fill="none" stroke="#FFFFFF" stroke-width="1.8" filter="url(#bloom)" stroke-dasharray="80 840">
+      <animate attributeName="stroke-dashoffset" values="920; -920" dur="4s" repeatCount="indefinite" />
+    </path>
+  </g>
 
-  <!-- Orbital Geometry / Radar Elements -->
-  <g transform="translate(750, 160)" stroke="#C77B9B" fill="none">
-    <!-- Outer ring with rotation -->
-    <circle r="105" stroke-width="1" stroke-dasharray="14 10" stroke-opacity="0.35">
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="40s" repeatCount="indefinite" />
+  <!-- Interactive Radar Orbit Geometry -->
+  <g transform="translate(745, 165)" stroke="#C77B9B" fill="none">
+    <!-- Outer dashed trajectory -->
+    <circle r="115" stroke-width="1" stroke-dasharray="12 10" stroke-opacity="0.3">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="45s" repeatCount="indefinite" />
     </circle>
     
-    <!-- Mid ring with counter-rotation -->
-    <circle r="75" stroke-width="1.2" stroke-dasharray="6 8 18 8" stroke-opacity="0.45" stroke="#E5B5C7">
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="28s" repeatCount="indefinite" />
+    <!-- Rotating satellite node on outer ring -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="45s" repeatCount="indefinite" />
+      <circle cx="115" cy="0" r="4.5" fill="#E5B5C7" filter="url(#bloom)" />
+    </g>
+
+    <!-- Middle radar ring -->
+    <circle r="80" stroke-width="1.4" stroke-dasharray="8 6 22 6" stroke-opacity="0.55" stroke="#E5B5C7">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="25s" repeatCount="indefinite" />
     </circle>
 
-    <!-- Innermost pulsing ring -->
-    <circle r="45" stroke-width="1.5" stroke-opacity="0.6">
-      <animate attributeName="r" values="42;48;42" dur="5s" repeatCount="indefinite" />
-      <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="5s" repeatCount="indefinite" />
+    <!-- Inner pulsing ring -->
+    <circle r="48" stroke-width="1.6" stroke-opacity="0.75" stroke="#F8F0F3">
+      <animate attributeName="r" values="44;52;44" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="stroke-opacity" values="0.4;0.9;0.4" dur="4s" repeatCount="indefinite" />
     </circle>
 
-    <!-- Center Tech Core -->
-    <circle r="6" fill="#E5B5C7" filter="url(#hero_glow)">
-      <animate attributeName="fill-opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite" />
+    <!-- Core pulse -->
+    <circle r="8" fill="#FFFFFF" filter="url(#bloom)">
+      <animate attributeName="fill-opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="r" values="7;9;7" dur="2s" repeatCount="indefinite" />
     </circle>
-    <circle r="16" stroke="#C77B9B" stroke-width="1" stroke-opacity="0.5" stroke-dasharray="2 3" />
+    <circle r="20" stroke="#E5B5C7" stroke-width="1.2" stroke-dasharray="3 4" stroke-opacity="0.6" />
 
-    <!-- Trajectory crosshairs -->
-    <line x1="-120" y1="0" x2="120" y2="0" stroke="#701A3D" stroke-width="0.75" stroke-opacity="0.4" />
-    <line x1="0" y1="-120" x2="0" y2="120" stroke="#701A3D" stroke-width="0.75" stroke-opacity="0.4" />
+    <!-- Coordinate Crosshairs -->
+    <line x1="-135" y1="0" x2="135" y2="0" stroke="#701A3D" stroke-width="0.8" stroke-opacity="0.5" />
+    <line x1="0" y1="-135" x2="0" y2="135" stroke="#701A3D" stroke-width="0.8" stroke-opacity="0.5" />
   </g>
 
-  <!-- Left Header Status Pill -->
-  <g transform="translate(48, 44)">
-    <rect x="0" y="0" width="280" height="26" rx="13" fill="#190B12" stroke="#701A3D" stroke-width="1" />
-    <circle cx="14" cy="13" r="4" fill="#C77B9B">
-      <animate attributeName="fill-opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" />
-      <animate attributeName="r" values="3.5;4.5;3.5" dur="2s" repeatCount="indefinite" />
+  <!-- Top Status Indicator -->
+  <g transform="translate(50, 42)">
+    <rect x="0" y="0" width="310" height="28" rx="14" fill="#1A0A14" stroke="#701A3D" stroke-width="1.2" />
+    <circle cx="15" cy="14" r="4.5" fill="#C77B9B">
+      <animate attributeName="fill-opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite" />
+      <animate attributeName="r" values="3.8;5.2;3.8" dur="1.8s" repeatCount="indefinite" />
     </circle>
-    <text x="26" y="17" fill="#E5B5C7" font-size="11" font-weight="600" letter-spacing="1.2" font-family="'Courier New', Courier, monospace">SYSTEM: ACTIVE // KONGUNADU '28</text>
+    <text x="28" y="18" fill="#FCEEF4" font-size="11.5" font-weight="700" letter-spacing="1.4" font-family="'Courier New', Courier, monospace">SYSTEM: ONLINE // KONGUNADU '28</text>
   </g>
 
-  <!-- Main Name Heading -->
-  <g transform="translate(48, 126)">
-    <text x="0" y="0" fill="url(#hero_text_grad)" font-size="44" font-weight="800" letter-spacing="-0.5" filter="url(#hero_soft_glow)">
+  <!-- Big Name Title -->
+  <g transform="translate(50, 130)">
+    <text x="0" y="0" fill="url(#hero_name_grad)" font-size="46" font-weight="900" letter-spacing="-0.5" filter="url(#soft_bloom)">
       HARISH SENTHILRAJA
     </text>
   </g>
 
-  <!-- Primary Subtitle / Title Line -->
-  <g transform="translate(48, 162)">
-    <text x="0" y="0" fill="#C77B9B" font-size="19" font-weight="600" letter-spacing="0.8">
+  <!-- Subtitle -->
+  <g transform="translate(50, 168)">
+    <text x="0" y="0" fill="#E5B5C7" font-size="20" font-weight="700" letter-spacing="0.5">
       AI &amp; Backend Software Engineer
     </text>
   </g>
 
-  <!-- Specialization Descriptor -->
-  <g transform="translate(48, 192)">
-    <text x="0" y="0" fill="#E5B5C7" font-size="13" font-weight="400" fill-opacity="0.88" letter-spacing="0.2">
-      Edge Computing <tspan fill="#701A3D">•</tspan> Multi-Agent AI Architecture <tspan fill="#701A3D">•</tspan> Distributed Systems &amp; Linux
+  <!-- Architecture Specialization Line -->
+  <g transform="translate(50, 198)">
+    <text x="0" y="0" fill="#F8F0F3" font-size="13.5" font-weight="400" fill-opacity="0.92" letter-spacing="0.3">
+      Edge Computing <tspan fill="#C77B9B">•</tspan> Multi-Agent AI Ecosystems <tspan fill="#C77B9B">•</tspan> High-Throughput Distributed Backends
     </text>
   </g>
 
-  <!-- Glowing Separator Laser Line -->
-  <g transform="translate(48, 218)">
-    <line x1="0" y1="0" x2="620" y2="0" stroke="#451126" stroke-width="1.5" />
-    <line x1="0" y1="0" x2="220" y2="0" stroke="url(#hero_laser_grad)" stroke-width="2.5" filter="url(#hero_glow)">
-      <animate attributeName="x1" values="0;400;0" dur="6s" repeatCount="indefinite" />
-      <animate attributeName="x2" values="220;620;220" dur="6s" repeatCount="indefinite" />
+  <!-- Sweeping Laser Beam Bar -->
+  <g transform="translate(50, 224)">
+    <line x1="0" y1="0" x2="630" y2="0" stroke="#451126" stroke-width="2" />
+    <line x1="0" y1="0" x2="250" y2="0" stroke="url(#laser_beam)" stroke-width="3" filter="url(#bloom)">
+      <animate attributeName="x1" values="0;400;0" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="250;650;250" dur="5s" repeatCount="indefinite" />
     </line>
   </g>
 
-  <!-- Tech Tags / Micro Badges -->
-  <g transform="translate(48, 252)">
-    <!-- Tag 1: Edge AI & Radar -->
+  <!-- Tech Tags Matrix -->
+  <g transform="translate(50, 256)">
+    <!-- Tag 1 -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="138" height="30" rx="6" fill="#190B12" stroke="#451126" stroke-width="1.2" />
-      <circle cx="14" cy="15" r="3.5" fill="#C77B9B" />
-      <text x="25" y="19" fill="#F8F0F3" font-size="12" font-weight="500">ESP32-S3 / Edge</text>
+      <rect x="0" y="0" width="144" height="32" rx="7" fill="#14070F" stroke="#701A3D" stroke-width="1.2" />
+      <circle cx="15" cy="16" r="3.5" fill="#E5B5C7" />
+      <text x="26" y="20" fill="#FFFFFF" font-size="12" font-weight="600">ESP32-S3 / Edge</text>
     </g>
 
-    <!-- Tag 2: LangGraph & Multi-Agent -->
-    <g transform="translate(150, 0)">
-      <rect x="0" y="0" width="170" height="30" rx="6" fill="#190B12" stroke="#451126" stroke-width="1.2" />
-      <circle cx="14" cy="15" r="3.5" fill="#E5B5C7" />
-      <text x="25" y="19" fill="#F8F0F3" font-size="12" font-weight="500">LangGraph / Multi-Agent</text>
+    <!-- Tag 2 -->
+    <g transform="translate(156, 0)">
+      <rect x="0" y="0" width="176" height="32" rx="7" fill="#14070F" stroke="#701A3D" stroke-width="1.2" />
+      <circle cx="15" cy="16" r="3.5" fill="#C77B9B" />
+      <text x="26" y="20" fill="#FFFFFF" font-size="12" font-weight="600">LangGraph / Multi-Agent</text>
     </g>
 
-    <!-- Tag 3: FastAPI & Docker -->
-    <g transform="translate(332, 0)">
-      <rect x="0" y="0" width="150" height="30" rx="6" fill="#190B12" stroke="#451126" stroke-width="1.2" />
-      <circle cx="14" cy="15" r="3.5" fill="#701A3D" />
-      <text x="25" y="19" fill="#F8F0F3" font-size="12" font-weight="500">FastAPI &amp; Container</text>
+    <!-- Tag 3 -->
+    <g transform="translate(344, 0)">
+      <rect x="0" y="0" width="156" height="32" rx="7" fill="#14070F" stroke="#701A3D" stroke-width="1.2" />
+      <circle cx="15" cy="16" r="3.5" fill="#E5B5C7" />
+      <text x="26" y="20" fill="#FFFFFF" font-size="12" font-weight="600">FastAPI &amp; Container</text>
     </g>
 
-    <!-- Tag 4: Arch Linux -->
-    <g transform="translate(494, 0)">
-      <rect x="0" y="0" width="144" height="30" rx="6" fill="#190B12" stroke="#451126" stroke-width="1.2" />
-      <circle cx="14" cy="15" r="3.5" fill="#C77B9B" />
-      <text x="25" y="19" fill="#F8F0F3" font-size="12" font-weight="500">Arch / Terminal-First</text>
+    <!-- Tag 4 -->
+    <g transform="translate(512, 0)">
+      <rect x="0" y="0" width="152" height="32" rx="7" fill="#14070F" stroke="#701A3D" stroke-width="1.2" />
+      <circle cx="15" cy="16" r="3.5" fill="#C77B9B" />
+      <text x="26" y="20" fill="#FFFFFF" font-size="12" font-weight="600">Arch / Terminal-First</text>
     </g>
   </g>
 
-  <!-- Right Decorative Coordinate & Timestamp -->
-  <g transform="translate(48, 312)">
-    <text x="0" y="0" fill="#701A3D" font-size="10" font-family="'Courier New', Courier, monospace" letter-spacing="1">
-      LOC: 11.2189° N, 78.1674° E (NAMAKKAL) // GITHUB: @Harish-628
+  <!-- Location & Metadata -->
+  <g transform="translate(50, 314)">
+    <text x="0" y="0" fill="#C77B9B" font-size="10.5" font-family="'Courier New', Courier, monospace" letter-spacing="1">
+      LOCATION: NAMAKKAL, TAMIL NADU, IN // REPO: github.com/Harish-628
     </text>
   </g>
 </svg>

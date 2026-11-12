@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 48" width="100%" height="100%" style="border-radius: 8px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Ubuntu', sans-serif;">
+  <defs>
+    <linearGradient id="badge_bar_bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10070C" />
+      <stop offset="50%" stop-color="#190B12" />
+      <stop offset="100%" stop-color="#10070C" />
+    </linearGradient>
+  </defs>
+
+  <rect width="920" height="48" fill="url(#badge_bar_bg)" rx="8" stroke="#451126" stroke-width="1.2" />
+
+  <!-- Badge 1: GitHub -->
+  <g transform="translate(16, 9)">
+    <rect width="160" height="30" rx="6" fill="#10070C" stroke="#701A3D" stroke-width="1" />
+    <circle cx="16" cy="15" r="4" fill="#E5B5C7">
+      <animate attributeName="fill-opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="28" y="19" fill="#F8F0F3" font-size="12" font-weight="600">GitHub</text>
+    <text x="76" y="19" fill="#C77B9B" font-size="12">@Harish-628</text>
+  </g>
+
+  <!-- Badge 2: Multi-Agent AI -->
+  <g transform="translate(190, 9)">
+    <rect width="210" height="30" rx="6" fill="#10070C" stroke="#451126" stroke-width="1" />
+    <circle cx="16" cy="15" r="4" fill="#C77B9B" />
+    <text x="28" y="19" fill="#F8F0F3" font-size="12" font-weight="600">Focus</text>
+    <text x="68" y="19" fill="#E5B5C7" font-size="12">Multi-Agent AI &amp; Edge</text>
+  </g>
+
+  <!-- Badge 3: Stack -->
+  <g transform="translate(414, 9)">
+    <rect width="180" height="30" rx="6" fill="#10070C" stroke="#451126" stroke-width="1" />
+    <circle cx="16" cy="15" r="4" fill="#E5B5C7" />
+    <text x="28" y="19" fill="#F8F0F3" font-size="12" font-weight="600">Stack</text>
+    <text x="70" y="19" fill="#C77B9B" font-size="12">FastAPI • LangGraph</text>
+  </g>
+
+  <!-- Badge 4: Arch Linux -->
+  <g transform="translate(608, 9)">
+    <rect width="144" height="30" rx="6" fill="#10070C" stroke="#451126" stroke-width="1" />
+    <circle cx="16" cy="15" r="4" fill="#C77B9B" />
+    <text x="28" y="19" fill="#F8F0F3" font-size="12" font-weight="600">OS</text>
+    <text x="54" y="19" fill="#E5B5C7" font-size="12">Arch • Xubuntu</text>
+  </g>
+
+  <!-- Badge 5: Status -->
+  <g transform="translate(766, 9)">
+    <rect width="138" height="30" rx="6" fill="#190B12" stroke="#701A3D" stroke-width="1" />
+    <circle cx="14" cy="15" r="4" fill="#E5B5C7">
+      <animate attributeName="r" values="3.5;5;3.5" dur="1.8s" repeatCount="indefinite" />
+      <animate attributeName="fill-opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite" />
+    </circle>
+    <text x="26" y="19" fill="#F8F0F3" font-size="11" font-weight="600">OPEN TO BUILD</text>
+  </g>
+</svg>
